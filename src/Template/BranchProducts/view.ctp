@@ -1,44 +1,53 @@
-<?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\BranchProduct $branchProduct
- */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Branch Product'), ['action' => 'edit', $branchProduct->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Branch Product'), ['action' => 'delete', $branchProduct->id], ['confirm' => __('Are you sure you want to delete # {0}?', $branchProduct->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Branch Products'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Branch Product'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Branches'), ['controller' => 'Branches', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Branch'), ['controller' => 'Branches', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Products'), ['controller' => 'Products', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Product'), ['controller' => 'Products', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
-<div class="branchProducts view large-9 medium-8 columns content">
-    <h3><?= h($branchProduct->id) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Branch') ?></th>
-            <td><?= $branchProduct->has('branch') ? $this->Html->link($branchProduct->branch->name, ['controller' => 'Branches', 'action' => 'view', $branchProduct->branch->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Product') ?></th>
-            <td><?= $branchProduct->has('product') ? $this->Html->link($branchProduct->product->name, ['controller' => 'Products', 'action' => 'view', $branchProduct->product->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($branchProduct->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Quantity') ?></th>
-            <td><?= $this->Number->format($branchProduct->quantity) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Created') ?></th>
-            <td><?= h($branchProduct->created) ?></td>
-        </tr>
-    </table>
+<?php $auth = $this->request->session()->read('Auth.User'); ?>
+<div class="">
+  <div class="col-md-12">
+    <div class="x_panel">
+      <div class="x_title">
+        <div class="row">
+            <div class="col-md-6">
+                <h3><?= __('Inventory') ?></h3>
+            </div>
+            <div class="col-md-6">
+                <?= $this->Html->link(__('Actual Inventory'), ['action' => 'add'],['class' => 'btn-success btn pull-right']) ?>
+            </div>
+        </div>
+      </div>
+      <div class="x_content">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" style="width:10%">Product Code</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col" style="width: 10%">Quantity</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
+				<?php foreach($products as $product) : //pr($auth); exit; ?>
+                <tr>
+
+                    <td><?= h($product->item_code) ?></td>
+                    <td><?= h($product->name) ?></td>
+                    <td><?= h($product->description) ?></td>
+                    <td><?= isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0; ?></td>
+                   
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+
+	function cart(obj)
+	{
+		console.log($(obj).parent().find('input').val());
+		$(obj).attr('data-qty', $(obj).parent().find('input').val());
+		window.location.href = "../cart/add?product_id=" + $(obj).data('prod') + "&branch_id=" + $(obj).data('branch') + "&quantity=" + $(obj).data('qty');
+	}
+</script>

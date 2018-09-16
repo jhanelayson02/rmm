@@ -197,7 +197,7 @@ class BuzzMessageController extends AppController
                     'user_id' => $staff_ids
                   ],[
                     'headers' => ['Authorization' => $this->getToken()]
-                  ])->body('json_decode');h
+                  ])->body('json_decode');
 
                 if($this->request->data['status'] == 'All') {
                     $usernames = $allUsernames;

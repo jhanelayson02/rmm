@@ -29,23 +29,26 @@ class BranchProductsController extends AppController
     }
 
     /**
-     * View method
+     * Inventory method
      *
      * @param string|null $id Branch Product id.
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view()
     {
         $auth = $this->request->session()->read('Auth.User');
-        $this->loadModel('Branches');
-        $branch = $this->Branches->get($id, [
-            'contain' => ['BranchProducts']
+        $this->loadModel('Products');
+        $products = $this->Products->find('all',[
+            'contain' => ['BranchProducts' => [
+                'conditions' => [
+                    'branch_id' => $auth['branch_id']
+                ]
+            ]]
         ]);
-        $products = $this->Products->find('all');
 
-        pr($branch);exit;
-        $this->set(compact('branchProduct'));
+        // pr($products->toArray());exit;
+        $this->set(compact('products'));
     }
 
     /**

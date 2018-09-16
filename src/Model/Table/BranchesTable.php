@@ -43,11 +43,11 @@ class BranchesTable extends Table
         ]);
 
         $this->hasMany('BranchProducts', [
-            'foreignKey' => 'product_id'
+            'foreignKey' => 'branch_id'
         ]);
 
         $this->hasMany('Cart', [
-            'foreignKey' => 'product_id'
+            'foreignKey' => 'branch_id'
         ]);
     }
 
