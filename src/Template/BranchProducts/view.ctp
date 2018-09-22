@@ -8,7 +8,7 @@
                 <h3><?= __('Inventory') ?></h3>
             </div>
             <div class="col-md-6">
-                <?= $this->Html->link(__('Actual Inventory'), ['action' => 'add'],['class' => 'btn-success btn pull-right']) ?>
+                <?= $this->Html->link(__('Actual Inventory'), ['controller' => 'InventorySummary', 'action' => 'add'],['class' => 'btn-success btn pull-right']) ?>
             </div>
         </div>
       </div>

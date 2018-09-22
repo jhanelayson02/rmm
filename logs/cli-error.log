@@ -5,3 +5,10 @@ Stack Trace:
 #2 {main}
 
 
+2018-09-16 10:35:10 Error: [RuntimeException] Unknown command `cake cake`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\rmm\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 177
+Stack Trace:
+#0 C:\xampp\htdocs\rmm\vendor\cakephp\cakephp\src\Console\CommandRunner.php(137): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'cake')
+#1 C:\xampp\htdocs\rmm\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
