@@ -163,9 +163,16 @@ class InventorySummaryController extends AppController
             'conditions' => [
                 'branch_id' => $auth['branch_id']
             ],
-            'order' => 'created DESC'
+            'contain' => ['Products'],
+            'order' => 'InventorySummary.created DESC'
         ]);
 
-        $this->set(compact('inventories'));
+        foreach ($inventories as $inventory) {
+              $inventorySummary[date('m-d-Y', strtotime($inventory->created))][] = $inventory;
+          }
+
+        // pr($inventorySummary);
+
+        $this->set(compact('inventorySummary'));
     }
 }
