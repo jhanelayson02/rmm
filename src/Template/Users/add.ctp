@@ -20,6 +20,10 @@
                 echo $this->Form->control('last_name', ['class' => 'form-control']);
                 echo $this->Form->control('username', ['class' => 'form-control']);
                 echo $this->Form->control('password', ['class' => 'form-control']);
+                echo $this->Form->input('role', [
+                  'options' => ['cashier' => 'Cashier', 'admin' => 'Admin'],
+                  'class' => 'form-control',
+                ]);
                 echo $this->Form->input('branch_id', [
                   'options' => $branches,
                   'class' => 'form-control',

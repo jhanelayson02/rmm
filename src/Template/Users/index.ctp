@@ -18,10 +18,11 @@
         <table id="datatable" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th scope="col"><?= $this->Paginator->sort('first_name') ?></th>
-                    <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
-                    <th scope="col"><?= $this->Paginator->sort('username') ?></th>
-                    <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Branch</th>
                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -31,7 +32,8 @@
                     <td><?= h($user->first_name) ?></td>
                     <td><?= h($user->last_name) ?></td>
                     <td><?= h($user->username) ?></td>
-                    <td><?= h($user->created) ?></td>
+                    <td><?= h($user->role) ?></td>
+                    <td><?= h($user->branch->name) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>

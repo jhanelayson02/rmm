@@ -31,6 +31,7 @@ class User extends Entity
         'username' => true,
         'password' => true,
         'branch_id' => true,
+        'role' => true,
         'created' => true
     ];
 

@@ -40,7 +40,7 @@ class CartController extends AppController
     {
         $this->loadModel('Orders');
         $order = $this->Orders->get($id, [
-            'contain' => ['Cart.Products', 'Users']
+            'contain' => ['Cart.Products', 'Users.Branches']
         ]);
         // pr($order);exit;
 
@@ -131,7 +131,7 @@ class CartController extends AppController
     {
         $this->loadModel('Orders');
         $orders = $this->Orders->find('all', [
-            'contain' => ['Cart', 'Users']
+            'contain' => ['Cart', 'Users.Branches']
         ]);
         // pr($orders->toArray());exit;
 

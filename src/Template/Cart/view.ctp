@@ -6,6 +6,7 @@
             <div class="col-md-4">
                 <p><h2> Orders (<?= $order['status'] ?>) </h2></p><br><br>
                 <p>Ordered by: <?= $order['user']['first_name'] . ' ' . $order['user']['last_name'] ?></p>
+                <p>Branch: <?= $order['user']['branch']['name'] ?></p>
                 <p>Date: <?= $order['created'] ?></p>
             </div>
             <?php 

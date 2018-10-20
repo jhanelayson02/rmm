@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2018 at 08:54 AM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Generation Time: Oct 20, 2018 at 07:12 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -121,7 +121,29 @@ INSERT INTO `audit` (`id`, `user_id`, `created`, `type`) VALUES
 (79, 9, '2018-09-16 09:24:39', 'Log-in'),
 (80, 9, '2018-09-22 02:36:26', 'Log-in'),
 (81, 9, '2018-09-22 06:20:36', 'Log-in'),
-(82, 9, '2018-09-22 06:41:53', 'Log-in');
+(82, 9, '2018-09-22 06:41:53', 'Log-in'),
+(83, 9, '2018-10-14 06:33:31', 'Log-in'),
+(84, 9, '2018-10-14 07:03:16', 'Log-in'),
+(85, 9, '2018-10-20 00:43:48', 'Log-in'),
+(86, 9, '2018-10-20 01:20:40', 'Log-in'),
+(87, 9, '2018-10-20 03:21:51', 'Log-in'),
+(88, 9, '2018-10-20 03:22:29', 'Log-out'),
+(89, 14, '2018-10-20 03:22:36', 'Log-in'),
+(90, 9, '2018-10-20 04:03:34', 'Log-in'),
+(91, 9, '2018-10-20 04:03:57', 'Log-out'),
+(92, 14, '2018-10-20 04:04:05', 'Log-in'),
+(93, 14, '2018-10-20 04:17:33', 'Log-out'),
+(94, 9, '2018-10-20 04:17:47', 'Log-in'),
+(95, 9, '2018-10-20 04:30:45', 'Log-out'),
+(96, 15, '2018-10-20 04:30:52', 'Log-in'),
+(97, 15, '2018-10-20 04:31:07', 'Log-out'),
+(98, 9, '2018-10-20 04:31:11', 'Log-in'),
+(99, 9, '2018-10-20 04:58:07', 'Log-out'),
+(100, 14, '2018-10-20 04:58:14', 'Log-in'),
+(101, 14, '2018-10-20 05:09:31', 'Log-out'),
+(102, 15, '2018-10-20 05:09:37', 'Log-in'),
+(103, 15, '2018-10-20 05:10:55', 'Log-out'),
+(104, 9, '2018-10-20 05:11:20', 'Log-in');
 
 -- --------------------------------------------------------
 
@@ -254,7 +276,16 @@ INSERT INTO `inventory_summary` (`id`, `branch_id`, `product_id`, `quantity`, `a
 (6, 1, 19, 387, 321, '-66', '2018-09-22'),
 (7, 1, 20, 0, 321, '321', '2018-09-22'),
 (8, 1, 21, 0, 231, '231', '2018-09-22'),
-(9, 1, 22, 0, 21, '21', '2018-09-22');
+(9, 1, 22, 0, 21, '21', '2018-09-22'),
+(10, 1, 13, 500, 431, '-69', '2018-10-14'),
+(11, 1, 15, 925, 324, '-601', '2018-10-14'),
+(12, 1, 16, 300, 534, '234', '2018-10-14'),
+(13, 1, 17, 134, 342, '208', '2018-10-14'),
+(14, 1, 18, 320, 534, '214', '2018-10-14'),
+(15, 1, 19, 387, 324, '-63', '2018-10-14'),
+(16, 1, 20, 0, 1, '1', '2018-10-14'),
+(17, 1, 21, 0, 3, '3', '2018-10-14'),
+(18, 1, 22, 0, 1, '1', '2018-10-14');
 
 -- --------------------------------------------------------
 
@@ -350,11 +381,13 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `password`, `role`, `branch_id`, `created`) VALUES
 (8, 'neljohn', 'ayson', 'jayson', '$2y$10$QoArny1Cg4BWseffbp9LVOBqhRTPQxfnFQJCnitPyitInPETb5tx2', NULL, 2, '2018-03-10 06:41:34'),
-(9, 'Denes', 'Cordova', 'dens', '$2y$10$eQInW47dlKlaFrcloHjffu.0u6sF4DvzIAwXMMqo8myYJQzqNEK6C', 'test', 1, '2018-03-11 04:10:52'),
+(9, 'Denes', 'Cordova', 'dens', '$2y$10$oJcmYIFbFm7C/rkd7Bs53OFyjNyoxYFA5tF3KYqE7ZtwN5yEzXwJe', 'test', 1, '2018-03-11 04:10:52'),
 (10, 'Jasper', 'Ayson', 'jas', '$2y$10$i7uzVfPriNOPXpWMQO/sauPTiKh1R4EtMBV5OLiRLQV0cTfV12jQ.', NULL, 1, '2018-06-28 05:01:46'),
 (11, 'jasper', 'ayson', 'jasper@test.com', '$2y$10$2zRzb1XptD1.q7Bnm.n6xeKCj4BoBe5QtwFryE14wGqa556WJ/UNW', NULL, 2, '2018-07-24 09:42:12'),
 (12, 'jhanel', 'ayson', 'jahnel', '', 'user', 1, '2018-09-03 19:43:56'),
-(13, 'jhanel', 'ayson', 'jahnel', '', 'user', 1, '2018-09-03 20:27:04');
+(13, 'jhanel', 'ayson', 'jahnel', '', 'user', 1, '2018-09-03 20:27:04'),
+(14, 'Jane', 'Doe', 'cashier', '$2y$10$84chtTNOQKL4U2YSYBPXGe6lAopxsHgrN504tswS1.E3Xo6gul7pq', 'cashier', 1, '2018-10-20 03:22:25'),
+(15, 'John', 'Doe', 'notmain', '$2y$10$5D176OIxIWZemlsiW5bZz.MG.QkHTqGAcwWnmZnjFX6fFOOojv0Bi', 'admin', 2, '2018-10-20 04:30:41');
 
 --
 -- Indexes for dumped tables
@@ -422,7 +455,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `audit`
 --
 ALTER TABLE `audit`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- AUTO_INCREMENT for table `branches`
@@ -446,7 +479,7 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT for table `inventory_summary`
 --
 ALTER TABLE `inventory_summary`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -464,7 +497,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

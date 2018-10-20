@@ -58,9 +58,24 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $users = $this->Users->find('all', [
-            'contain' => ['Branches']
-        ])->toArray();
+        $auth = $this->request->session()->read('Auth.User');
+
+        if ($auth['role'] == 'cashier') {
+            return $this->redirect(['controller' => 'BranchProducts', 'action' => 'pos']);
+        }
+        if ($auth['is_main']) {
+            $users = $this->Users->find('all', [
+                'contain' => ['Branches']
+            ])->toArray();
+        } else {
+            $users = $this->Users->find('all', [
+                'contain' => ['Branches'],
+                'conditions' => [
+                    'branch_id' => $auth['branch_id']
+                ]
+            ])->toArray();
+        }
+        // pr($users);
 
         $this->set(compact('users'));
     }
@@ -88,8 +103,16 @@ class UsersController extends AppController
      */
     public function add()
     {
+        $auth = $this->request->session()->read('Auth.User');
+        
         $this->loadModel('Branches');
-        $branches = $this->Branches->find('list');
+        $condition = [];
+        if (!$auth['is_main']) {
+            $condition = ['id' => $auth['branch_id']];
+        }
+        $branches = $this->Branches->find('list', [
+            'conditions' => $condition
+        ]);
 
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
@@ -113,6 +136,16 @@ class UsersController extends AppController
      */
     public function edit($id = null)
     {
+        $auth = $this->request->session()->read('Auth.User');
+        $this->loadModel('Branches');
+        $condition = [];
+        if (!$auth['is_main']) {
+            $condition = ['id' => $auth['branch_id']];
+        }
+        $branches = $this->Branches->find('list', [
+            'conditions' => $condition
+        ]);
+
         $user = $this->Users->get($id, [
             'contain' => []
         ]);
@@ -125,7 +158,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $this->set(compact('user'));
+        $this->set(compact('user', 'branches'));
     }
 
     /**
