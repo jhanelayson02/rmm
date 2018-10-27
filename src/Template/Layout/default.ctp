@@ -27,6 +27,7 @@ $cakeDescription = 'RMM';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?= $this->Html->css(['bootstrap', 'custom.min', 'font-awesome.min','dataTables.bootstrap.min']) ?>
 
@@ -42,7 +43,7 @@ $cakeDescription = 'RMM';
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a class="site_title"><i class="fa fa-paw"></i> <span>RMM Meatshop</span></a>
+              <a class="site_title"><i class="fa fa-cutlery"></i> <span>RMM Meatshop</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -116,7 +117,7 @@ $cakeDescription = 'RMM';
           </div>
         </div>
         <!-- /top navigation -->
-        <div class="right_col" role="main">
+        <div class="right_col" role="main" style="min-height: 707px;">
             <?= $this->Flash->render() ?>
                 <?= $this->fetch('content') ?>
         </div>

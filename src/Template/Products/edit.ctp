@@ -22,6 +22,16 @@
                 echo $this->Form->control('item_code', ['class' => 'form-control']);
                 echo $this->Form->control('name', ['class' => 'form-control']);
                 echo $this->Form->control('description', ['class' => 'form-control']);
+                echo $this->Form->control('type',[
+                    'options' => [
+                        'pork' => 'Pork Products',
+                        'chicken' => 'Chicken Products',
+                        'beef' => 'Beef Products',
+                        'value-added' => 'Value-Added Products'
+                    ],
+                    'class' => 'form-control'
+                ]);
+                echo $this->Form->control('o_price',['label' => 'Original Price','class' => 'form-control']);
                 echo $this->Form->control('price', ['class' => 'form-control']);
                 echo $this->Form->control('unit', ['class' => 'form-control']);
             ?>

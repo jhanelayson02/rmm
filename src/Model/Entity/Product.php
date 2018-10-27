@@ -33,6 +33,8 @@ class Product extends Entity
         'item_code' => true,
         'name' => true,
         'description' => true,
+        'type' => true,
+        'o_price' => true,
         'price' => true,
         'unit' => true,
         'created' => true,
