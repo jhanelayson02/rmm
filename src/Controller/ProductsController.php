@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use DatabaseBackup\Utility\BackupExport;
 
 /**
  * Products Controller
@@ -109,5 +110,31 @@ class ProductsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function backup()
+    {
+        if ($this->request->is('post')) {
+            // pr($this->request->data);exit;
+                $db = new \mysqli('localhost', 'root', '', 'rmm');
+                if (isset($this->request->data['backup'])) {
+                $dump = new \MySQLDump($db);
+                $dump->save('dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz');
+        
+                $this->redirect('/dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz');
+            } elseif (isset($this->request->data['restore'])) {
+                $import = new \MySQLImport($db);
+
+                $target_dir = "dbase/";
+                $target_file = $target_dir . basename($_FILES["file"]["name"]);
+                move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+                $this->request->data['file'] = basename($_FILES["file"]["name"]);
+
+                $import->load('dbase/' . $this->request->data['file']);
+                $this->Flash->success('Database has been restored.');
+            }
+            
+        }
+        
     }
 }

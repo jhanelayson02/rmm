@@ -144,7 +144,7 @@ html , body{
     padding: 0 0 4px 0
 }
 .left_col {
-    background: #2A3F54
+    background: #06A7E2
 }
 .nav-sm .container.body .col-md-3.left_col {
     min-height: 100%;
@@ -278,7 +278,7 @@ html , body{
 .profile_info span {
     font-size: 13px;
     line-height: 30px;
-    color: #BAB8B8
+    color: rgb(255, 255, 255)
 }
 .profile_info h2 {
     font-size: 14px;
@@ -360,7 +360,7 @@ body .container.body .right_col {
 .nav_title {
     width: 230px;
     float: left;
-    background: #2A3F54;
+    background: #0299d1;
     border-radius: 0;
     height: 57px
 }

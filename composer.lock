@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1e9acdeb93b99e26731b8ec5a216123",
+    "content-hash": "2ea8939345cdadf15b406e5e52dad5d5",
     "packages": [
         {
             "name": "aura/intl",
@@ -290,6 +290,46 @@
             "time": "2017-12-24T21:09:29+00:00"
         },
         {
+            "name": "dg/mysql-dump",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/MySQL-dump.git",
+                "reference": "6c9cf07092bcc4a140bef01c64d883ebfccfccfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/MySQL-dump/zipball/6c9cf07092bcc4a140bef01c64d883ebfccfccfa",
+                "reference": "6c9cf07092bcc4a140bef01c64d883ebfccfccfa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                }
+            ],
+            "description": "MySQL database dump.",
+            "homepage": "https://github.com/dg/MySQL-dump",
+            "keywords": [
+                "mysql"
+            ],
+            "time": "2018-10-31T00:31:09+00:00"
+        },
+        {
             "name": "josegonzalez/cakephp-upload",
             "version": "3.7.0",
             "source": {
@@ -426,6 +466,95 @@
                 "storage"
             ],
             "time": "2018-03-01T10:27:04+00:00"
+        },
+        {
+            "name": "mirko-pagliai/cakephp-database-backup",
+            "version": "dev-cakephp3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mirko-pagliai/cakephp-database-backup.git",
+                "reference": "3f460ac3a7e4d10e77dc6cd2f251f58ae4b0a9a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mirko-pagliai/cakephp-database-backup/zipball/3f460ac3a7e4d10e77dc6cd2f251f58ae4b0a9a0",
+                "reference": "3f460ac3a7e4d10e77dc6cd2f251f58ae4b0a9a0",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.2",
+                "mirko-pagliai/php-tools": "^1.1",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "DatabaseBackup\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mirko Pagliai",
+                    "email": "mirko.pagliai@gmail.com"
+                }
+            ],
+            "description": "Database Backup plugin for CakePHP",
+            "homepage": "https://github.com/mirko-pagliai/cakephp-database-backup",
+            "time": "2018-10-23T11:42:28+00:00"
+        },
+        {
+            "name": "mirko-pagliai/php-tools",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mirko-pagliai/php-tools.git",
+                "reference": "23ac273cba76bc4cf98a33b99b2cc92bb4d1fc13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mirko-pagliai/php-tools/zipball/23ac273cba76bc4cf98a33b99b2cc92bb4d1fc13",
+                "reference": "23ac273cba76bc4cf98a33b99b2cc92bb4d1fc13",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpunit/phpunit": "^5.7|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tools\\": "src"
+                },
+                "files": [
+                    "src/global_functions.php",
+                    "src/or_fail_functions.php",
+                    "src/safe_functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mirko Pagliai",
+                    "email": "mirko.pagliai@gmail.com"
+                }
+            ],
+            "description": "Some essential tools for PHP",
+            "homepage": "https://github.com/mirko-pagliai/php-tools",
+            "time": "2018-10-12T11:11:31+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2480,6 +2609,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mirko-pagliai/cakephp-database-backup": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

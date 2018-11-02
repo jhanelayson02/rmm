@@ -216,3 +216,5 @@ Type::build('timestamp')
 // }
 
 Plugin::load('Josegonzalez/Upload');
+
+Plugin::load('DatabaseBackup', ['bootstrap' => true]);

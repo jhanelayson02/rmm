@@ -9,7 +9,9 @@
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "dg/mysql-dump": "^1.5",
         "josegonzalez/cakephp-upload": "^3.4",
+        "mirko-pagliai/cakephp-database-backup": "dev-cakephp3.2",
         "mobiledetect/mobiledetectlib": "2.*"
     },
     "require-dev": {

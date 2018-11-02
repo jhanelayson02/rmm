@@ -84,6 +84,9 @@ $cakeDescription = 'RMM';
                         <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
                         </li>
 
+                        <li><?= $this->Html->link('<i class="fa fa-cloud-download"></i> Backup and Restore  <span class="fa fa-chevron-right"></span>', ['controller' => 'Products', 'action' => 'backup'], ['escape' => false]); ?>
+                        </li>
+
                         <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Audit Trail  <span class="fa fa-chevron-right"></span>', ['controller' => 'Users', 'action' => 'auditTrail'], ['escape' => false]); ?>
                         </li>
                     </ul>
