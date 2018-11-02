@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * BranchProducts Controller
@@ -47,7 +48,7 @@ class BranchProductsController extends AppController
             ]]
         ]);
 
-        // pr($products->toArray());exit;
+        pr($products->toArray());exit;
         $this->set(compact('products'));
     }
 
@@ -131,8 +132,50 @@ class BranchProductsController extends AppController
     {
         $this->viewBuilder()->setLayout('');
         $this->loadModel('Products');
+        $this->loadModel('Sales');
+        $this->loadModel('SaleItems');
         $products = $this->Products->find('all');
 
+        $auth = $this->request->session()->read('Auth.User');
+        if ($this->request->is('post')) {
+            // pr($this->request->data);exit;
+            $salesTable = TableRegistry::get('Sales');
+            $sale = $salesTable->newEntity();
+            $sale->user_id = $auth['id'];
+            $sale->branch_id = $auth['branch_id'];
+            $sale->amount = $this->request->data['total'];
+            $sale->cash_change = $this->request->data['payment'] - $this->request_data['total'];
+            $sale->cash = $this->request->data['payment'];
+            $salesTable->save($sale);
+            // pr($sale->validationErrors);exit;
+
+            foreach ($this->request->data['quant'] as $prod_id => $qty) {
+
+                $itemsTable = TableRegistry::get('SaleItems');
+                $item = $itemsTable->newEntity();
+                $item->sale_id = $sale['id'];
+                $item->product_id = $prod_id;
+                $item->qty = $qty;
+                $item->cost = $this->request->data['prod_total'][$prod_id];
+                $itemsTable->save($item);
+            }
+            $this->redirect(['action' => 'receipt', $sale['id']]);
+            // return $this->Flash->success('Success');
+
+        }
         $this->set(compact('products'));
+    }
+
+    public function receipt($id)
+    {
+        $this->viewBuilder()->setLayout('');
+        $this->loadModel('Sales');
+
+        $sale = $this->Sales->get($id, [
+            'contain' => ['SaleItems.Products','Users','Branches']
+        ]);
+        // pr($sale);exit;
+
+        $this->set(compact('sale'));
     }
 }

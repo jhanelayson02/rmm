@@ -42,6 +42,10 @@ class BranchesTable extends Table
             'foreignKey' => 'branch_id'
         ]);
 
+        $this->hasMany('Sales', [
+            'foreignKey' => 'branch_id'
+        ]);
+
         $this->hasMany('BranchProducts', [
             'foreignKey' => 'branch_id'
         ]);

@@ -183,6 +183,9 @@ function btnNum(obj){
     $('#subTotal').html('P ' + parseFloat(totalPoints*0.88).toFixed(2));
     $('#tax').html('P ' + parseFloat(totalPoints*0.12).toFixed(2));
     $('#grandTotal').html('P ' + parseFloat(totalPoints).toFixed(2));
+    $('#grandTotal2').html('P ' + parseFloat(totalPoints).toFixed(2));
+    $('#grandTotal3').val(parseFloat(totalPoints).toFixed(2));
+    $('#grandTotalInput').val(parseFloat(totalPoints).toFixed(2));
 };
 $('.input-number').focusin(function(){
    $(this).data('oldValue', $(this).val());

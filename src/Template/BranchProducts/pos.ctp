@@ -9,7 +9,7 @@
         <div class="col-md-5"><br>
             <div class="x_panel" style="min-height:95%">
                 <div class="x_content">
-                    <?= $this->Form->create('', ['url' => ['controller' => 'cart', 'action' => 'add']]) ?>
+                    <?= $this->Form->create('') ?>
                     <div id="wrap">
                         <label for="">Customer(optional): </label>
                         <input type="text" name="cus_name" id="keyboard" class="form-control keyboard-normal">
@@ -51,9 +51,41 @@
                         </tr>
                     </table>
 
+                    <!-- Small modal -->
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Add Sale</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Customer: </h4>
+                            <p><h3>Total: <span id="grandTotal2"></span></h3></p>
+                            <p>
+                                <label for="">Paid:</label>
+                                <input type="number" id="grandTotal3" name="payment" class="form-control" onchange="change(this)">
+                                <input type="hidden" id="grandTotalInput" name="total" class="form-control">
+                            </p>
+                            <p>
+                                Change: <span id="change" class="text-success">0</span>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary submitForm">Submit</button>
+                        </div>
+
+                        </div>
+                    </div>
+                    </div>
+                    <!-- /modals -->
+
                     <?= $this->Form->end() ?>
                     <?= $this->Form->button('CANCEL', ['class' => 'btn btn-danger col-md-5']) ?>
-                    <?= $this->Form->button('PAYMENT', ['class' => 'btn btn-success col-md-6']) ?>
+                    <button type="button" class="btn btn-success col-md-6" data-toggle="modal" data-target=".bs-example-modal-sm">PAYMENT</button>
                 </div>
             </div>
         </div>
@@ -151,11 +183,16 @@
         </div>
     </div>
 </div>
+
+
+
 <script>
     function add(obj)
     {
         $('.empty').hide();
-        $('.order').append('<div class="well"><div class="row"><div class="col-md-3">'+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control input-number" value="1" min="1" max="100"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" readonly name="total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'"></div></div></div>');
+        if ($('#well' + $(obj).data('id')).length == 0) {
+            $('.order').append('<div class="well" id="well'+ $(obj).data('id') +'"><div class="row"><div class="col-md-3">'+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control input-number" value="1" min="1" max="100"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" name="prod_total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'" readonly></div></div></div>');
+        }
         
         var totalPoints = 0;
         $('.total').each(function(){
@@ -164,5 +201,19 @@
         $('#subTotal').html('P ' + parseFloat(totalPoints*0.88).toFixed(2));
         $('#tax').html('P ' + parseFloat(totalPoints*0.12).toFixed(2));
         $('#grandTotal').html('P ' + parseFloat(totalPoints).toFixed(2));
-    }    
+        $('#grandTotal2').html('P ' + parseFloat(totalPoints).toFixed(2));
+        $('#grandTotal3').val(parseFloat(totalPoints).toFixed(2));
+        $('#grandTotalInput').val(parseFloat(totalPoints).toFixed(2));
+    }
+    
+    function change(obj)
+    {
+        $('#change').html(parseFloat($(obj).val()-$('#grandTotalInput').val()).toFixed(2));
+
+        if (($(obj).val()-$('#grandTotalInput').val()) < 0) {
+            $('.submitForm').attr('disabled', true);
+        } else {
+            $('.submitForm').attr('disabled', false);
+        }
+    }
 </script>
