@@ -48,7 +48,7 @@ class BranchProductsController extends AppController
             ]]
         ]);
 
-        pr($products->toArray());exit;
+        // pr($products->toArray());exit;
         $this->set(compact('products'));
     }
 

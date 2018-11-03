@@ -35,9 +35,8 @@
                     <td><?= h($user->role) ?></td>
                     <td><?= h($user->branch->name) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
+                        <?= $this->Html->link(__('<i class="fa fa-edit"></i> Edit'), ['action' => 'edit', $user->id], ['class' => 'text-success', 'escape' => false]) ?> &nbsp;|&nbsp;
+                        <?= $this->Form->postLink(__('<i class="fa fa-archive"></i> Archive'), ['action' => 'delete', $user->id, '?' => ['type' => 'archive']], ['confirm' => __('Are you sure you want to archive '. $user->last_name .'?'), 'class' => 'text-danger', 'escape' => false]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

@@ -20,7 +20,11 @@ class BranchesController extends AppController
      */
     public function index()
     {
-        $branches = $this->paginate($this->Branches);
+        $branches = $this->Branches->find('all', [
+            'conditions' => [
+                'is_deleted' => 0
+            ]
+        ]);
 
         $this->set(compact('branches'));
     }
@@ -94,14 +98,31 @@ class BranchesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $branch = $this->Branches->get($id);
-        if ($this->Branches->delete($branch)) {
-            $this->Flash->success(__('The branch has been deleted.'));
+        if ($this->request->query['type'] == 'archive') {
+            $this->Branches->updateAll(
+                ['is_deleted' => 1],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been archived!');
         } else {
-            $this->Flash->error(__('The branch could not be deleted. Please, try again.'));
+            $this->Branches->updateAll(
+                ['is_deleted' => 0],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been restored!');
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
+    }
+
+    public function archive()
+    {
+        $branches = $this->Branches->find('all', [
+            'conditions' => [
+                'is_deleted' => 1
+            ]
+        ]);
+
+        $this->set(compact('branches'));
     }
 }

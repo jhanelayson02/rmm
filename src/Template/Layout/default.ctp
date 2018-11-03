@@ -27,11 +27,11 @@ $cakeDescription = 'RMM';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->css(['jquery-ui.min','bootstrap.min', 'custom.min']) ?>
     <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <?= $this->Html->css(['bootstrap', 'custom.min', 'font-awesome.min','dataTables.bootstrap.min']) ?>
 
-    <?= $this->Html->script(['jquery.min', 'bootstrap.min', 'custom','jquery.dataTables.min']);?>
+    <?= $this->Html->script(['jquery.min', 'bootstrap.min', 'custom.min','jquery.dataTables.min']);?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -85,6 +85,9 @@ $cakeDescription = 'RMM';
                         </li>
 
                         <li><?= $this->Html->link('<i class="fa fa-cloud-download"></i> Backup and Restore  <span class="fa fa-chevron-right"></span>', ['controller' => 'Products', 'action' => 'backup'], ['escape' => false]); ?>
+                        </li>
+
+                        <li><?= $this->Html->link('<i class="fa fa-archive"></i> Archive <span class="fa fa-chevron-right"></span>', ['controller' => 'Products', 'action' => 'archive'], ['escape' => false]); ?>
                         </li>
 
                         <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Audit Trail  <span class="fa fa-chevron-right"></span>', ['controller' => 'Users', 'action' => 'auditTrail'], ['escape' => false]); ?>

@@ -21,7 +21,11 @@ class ProductsController extends AppController
      */
     public function index()
     {
-        $products = $this->paginate($this->Products);
+        $products = $this->Products->find('all', [
+            'conditions' => [
+                'is_deleted' => 0
+            ]
+        ]);
 
         $this->set(compact('products'));
     }
@@ -101,15 +105,21 @@ class ProductsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $product = $this->Products->get($id);
-        if ($this->Products->delete($product)) {
-            $this->Flash->success(__('The product has been deleted.'));
+        if ($this->request->query['type'] == 'archive') {
+            $this->Products->updateAll(
+                ['is_deleted' => 1],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been archived!');
         } else {
-            $this->Flash->error(__('The product could not be deleted. Please, try again.'));
+            $this->Products->updateAll(
+                ['is_deleted' => 0],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been restored!');
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
     }
 
     public function backup()
@@ -136,5 +146,16 @@ class ProductsController extends AppController
             
         }
         
+    }
+
+    public function archive()
+    {
+        $products = $this->Products->find('all', [
+            'conditions' => [
+                'is_deleted' => 1
+            ]
+        ]);
+
+        $this->set(compact('products'));
     }
 }

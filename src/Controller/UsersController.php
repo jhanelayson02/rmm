@@ -65,13 +65,17 @@ class UsersController extends AppController
         }
         if ($auth['is_main']) {
             $users = $this->Users->find('all', [
-                'contain' => ['Branches']
+                'contain' => ['Branches'],
+                'conditions' => [
+                    'Users.is_deleted' => 0
+                ]
             ])->toArray();
         } else {
             $users = $this->Users->find('all', [
                 'contain' => ['Branches'],
                 'conditions' => [
-                    'branch_id' => $auth['branch_id']
+                    'Users.branch_id' => $auth['branch_id'],
+                    'Users.is_deleted' => 0
                 ]
             ])->toArray();
         }
@@ -170,15 +174,21 @@ class UsersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $user = $this->Users->get($id);
-        if ($this->Users->delete($user)) {
-            $this->Flash->success(__('The user has been deleted.'));
+        if ($this->request->query['type'] == 'archive') {
+            $this->Users->updateAll(
+                ['is_deleted' => 1],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been archived!');
         } else {
-            $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+            $this->Users->updateAll(
+                ['is_deleted' => 0],
+                ['id' => $id]
+            );
+            $this->Flash->success('The product has been restored!');
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
     }
 
     public function auditTrail()
@@ -190,5 +200,17 @@ class UsersController extends AppController
         ]);
 
         $this->set(compact('audits'));
+    }
+
+    public function archive()
+    {
+        $users = $this->Users->find('all', [
+            'contain' => ['Branches'],
+            'conditions' => [
+                'Users.is_deleted' => 1
+            ]
+        ]);
+
+        $this->set(compact('users'));
     }
 }

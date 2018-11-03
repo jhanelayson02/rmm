@@ -20,7 +20,6 @@
                     <?php
                         echo $this->Form->control('name', ['class' => 'form-control']);
                         echo $this->Form->control('description', ['class' => 'form-control']);
-                        echo $this->Form->control('is_main');
                     ?>
                 </fieldset>
                 <?= $this->Form->button('Submit',['class' => 'btn btn-success']) ?>
