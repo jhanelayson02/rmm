@@ -66,8 +66,14 @@
   <div style="width: 20%;margin-left: 40%;">
   
     <div class="row">
-        <div class="col-md-6"><button class="col-md-12 btn btn-default">Back to POS</button></div>
+        <div class="col-md-6"><button class="col-md-12 btn btn-default" onclick="goBack()">Back to POS</button></div>
         <div class="col-md-6"><button class="col-md-12 btn btn-success">Print</button></div>
     </div>
   </div>
 </div>
+<script>
+    <?php $redirect = $this->request->query['redirect'] ?>
+    function goBack() {
+        window.location.href = <?= "'" . $redirect . "'" ?>;
+    }
+</script>

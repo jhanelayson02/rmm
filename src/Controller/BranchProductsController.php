@@ -142,6 +142,7 @@ class BranchProductsController extends AppController
             $salesTable = TableRegistry::get('Sales');
             $sale = $salesTable->newEntity();
             $sale->user_id = $auth['id'];
+            $sale->cus_name = $this->request->data['cus_name'];
             $sale->branch_id = $auth['branch_id'];
             $sale->amount = $this->request->data['total'];
             $sale->cash_change = $this->request->data['payment'] - $this->request_data['total'];
@@ -158,8 +159,24 @@ class BranchProductsController extends AppController
                 $item->qty = $qty;
                 $item->cost = $this->request->data['prod_total'][$prod_id];
                 $itemsTable->save($item);
+
+                $cart = $this->BranchProducts->find('all', [
+                    'conditions' => [
+                        'branch_id' => $auth['branch_id'],
+                        'product_id' => $prod_id
+                    ]
+                ])->first();
+    
+                if ($cart) {
+                    $quantity = $cart->quantity - $qty;
+                    $this->BranchProducts->updateAll(
+                        ['quantity' => $quantity],
+                        ['id' => $cart->id]
+                    );
+                }
+                    
             }
-            $this->redirect(['action' => 'receipt', $sale['id']]);
+            $this->redirect(['action' => 'receipt', $sale['id'], '?' => ['redirect' => '/rmm/branch_products/pos']]);
             // return $this->Flash->success('Success');
 
         }

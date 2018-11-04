@@ -191,7 +191,7 @@
     {
         $('.empty').hide();
         if ($('#well' + $(obj).data('id')).length == 0) {
-            $('.order').append('<div class="well" id="well'+ $(obj).data('id') +'"><div class="row"><div class="col-md-3">'+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control input-number" value="1" min="1" max="100"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" name="prod_total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'" readonly></div></div></div>');
+            $('.order').append('<div class="well" id="well'+ $(obj).data('id') +'"><div class="row"><div class="col-md-3"><a href="#" class="remove_field"><i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="color:#d9534f"></i></a> '+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control input-number" value="1" min="1" max="100"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" name="prod_total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'" readonly></div></div></div>');
         }
         
         var totalPoints = 0;
@@ -216,4 +216,9 @@
             $('.submitForm').attr('disabled', false);
         }
     }
+
+    $('.order').on("click",".remove_field", function(e){
+        e.preventDefault(); $(this).parent().parent().parent().remove();
+        x--;
+    });
 </script>

@@ -131,7 +131,9 @@ class ProductsController extends AppController
                 $dump = new \MySQLDump($db);
                 $dump->save('dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz');
         
-                $this->redirect('/dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz');
+                $filePath = 'dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz';
+                $this->response->file($filePath ,
+                    array('download'=> true, 'name'=> 'rmm_'. date("m_d_y_h_s_i") .'.sql.gz'));
             } elseif (isset($this->request->data['restore'])) {
                 $import = new \MySQLImport($db);
 

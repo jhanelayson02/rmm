@@ -1,19 +1,5 @@
 <?php
 $auth = $this->request->session()->read('Auth.User');
-// pr($auth);exit;
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
 
 $cakeDescription = 'RMM';
 ?>
@@ -27,11 +13,11 @@ $cakeDescription = 'RMM';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-    <?= $this->Html->css(['jquery-ui.min','bootstrap.min', 'custom.min']) ?>
+    <?= $this->Html->css(['jquery-ui.min','bootstrap.min', 'custom.min', 'bootstrap-datetimepicker.min']) ?>
     <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <?= $this->Html->script(['jquery.min', 'bootstrap.min', 'custom.min','jquery.dataTables.min']);?>
+    <?= $this->Html->script(['jquery.min', 'bootstrap.min', 'custom.min', 'jquery.dataTables.min', 'moment.min', 'bootstrap-datetimepicker.min']);?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -72,16 +58,20 @@ $cakeDescription = 'RMM';
                         <li> <?= $this->Html->link('<i class="fa fa-users"></i> Accounts  <span class="fa fa-chevron-right"></span>', ['controller' => 'users', 'action' => 'index'], ['escape' => false]); ?>
                         </li>
 
-                        <li><?= $this->Html->link('<i class="fa fa-sitemap"></i> Branches  <span class="fa fa-chevron-right"></span>', ['controller' => 'branches', 'action' => 'index'], ['escape' => false]); ?>
-                        </li>
-
                         <li><?= $this->Html->link('<i class="fa fa-file"></i> Inventory  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'view', $auth['branch_id']], ['escape' => false]); ?>
                         </li>
 
-                        <li><?= $this->Html->link('<i class="fa fa-cutlery"></i> Products  <span class="fa fa-chevron-right"></span>', ['controller' => 'products', 'action' => 'index'], ['escape' => false]); ?>
+                        <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
                         </li>
 
-                        <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
+                        <li><?= $this->Html->link('<i class="fa fa-money"></i> Sales  <span class="fa fa-chevron-right"></span>', ['controller' => 'Sales'], ['escape' => false]); ?>
+                        </li>
+
+                        <?php if ($auth['is_main']) { ?>
+                        <li><?= $this->Html->link('<i class="fa fa-sitemap"></i> Branches  <span class="fa fa-chevron-right"></span>', ['controller' => 'branches', 'action' => 'index'], ['escape' => false]); ?>
+                        </li>
+
+                        <li><?= $this->Html->link('<i class="fa fa-cutlery"></i> Products  <span class="fa fa-chevron-right"></span>', ['controller' => 'products', 'action' => 'index'], ['escape' => false]); ?>
                         </li>
 
                         <li><?= $this->Html->link('<i class="fa fa-cloud-download"></i> Backup and Restore  <span class="fa fa-chevron-right"></span>', ['controller' => 'Products', 'action' => 'backup'], ['escape' => false]); ?>
@@ -89,7 +79,8 @@ $cakeDescription = 'RMM';
 
                         <li><?= $this->Html->link('<i class="fa fa-archive"></i> Archive <span class="fa fa-chevron-right"></span>', ['controller' => 'Products', 'action' => 'archive'], ['escape' => false]); ?>
                         </li>
-
+                        <?php } ?>
+                        
                         <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Audit Trail  <span class="fa fa-chevron-right"></span>', ['controller' => 'Users', 'action' => 'auditTrail'], ['escape' => false]); ?>
                         </li>
                     </ul>
@@ -124,8 +115,10 @@ $cakeDescription = 'RMM';
         </div>
         <!-- /top navigation -->
         <div class="right_col" role="main" style="min-height: 707px;">
-            <?= $this->Flash->render() ?>
-                <?= $this->fetch('content') ?>
+            <div class="col-md-4 col-md-offset-8">
+              <?= $this->Flash->render() ?>
+            </div> 
+            <?= $this->fetch('content') ?>
         </div>
         </div>
         </div>
