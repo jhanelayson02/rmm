@@ -22,7 +22,7 @@ class BranchesController extends AppController
     {
         $branches = $this->Branches->find('all', [
             'conditions' => [
-                'is_deleted' => 0
+                'NOT' => ['is_deleted' => 1]
             ]
         ]);
 
@@ -60,6 +60,7 @@ class BranchesController extends AppController
 
                 return $this->redirect(['action' => 'index']);
             }
+            // pr($branch->errors());exit;
             $this->Flash->error(__('The branch could not be saved. Please, try again.'));
         }
         $this->set(compact('branch'));

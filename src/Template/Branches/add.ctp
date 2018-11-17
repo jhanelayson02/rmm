@@ -22,7 +22,7 @@
             echo $this->Form->control('name',['class' => 'form-control']);
             echo $this->Form->control('description',['class' => 'form-control']);
         ?>
-    </fieldset>
+    </fieldset><br>
     <?= $this->Form->button('Submit', ['class' => 'btn btn-success']) ?>
     <?= $this->Form->end() ?>
 

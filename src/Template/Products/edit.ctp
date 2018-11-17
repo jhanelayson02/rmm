@@ -33,7 +33,15 @@
                 ]);
                 echo $this->Form->control('o_price',['label' => 'Original Price','class' => 'form-control']);
                 echo $this->Form->control('price', ['class' => 'form-control']);
-                echo $this->Form->control('unit', ['class' => 'form-control']);
+                echo $this->Form->control('unit', [
+                    'options' => [
+                        'kg' => 'kg',
+                        'pcs' => 'pcs',
+                        'pack/s' => 'pack/s',
+                        'lbs' => 'lbs',
+                        'kg' => 'kg',
+                    ],
+                    'class' => 'form-control']);
             ?>
         </fieldset>
 

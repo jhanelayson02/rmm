@@ -29,6 +29,7 @@
                     <td><?= 'P' . $product->price. '.00' ?></td>
                     <td>
                     	<?= $this->Form->input('quantity[]', [
+                            'type' => 'number',
                     		'class' => 'form-control',
                     		'label' => false,
                     		'placeholder' => 0

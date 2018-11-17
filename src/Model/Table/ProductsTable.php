@@ -96,10 +96,15 @@ class ProductsTable extends Table
             ->requirePresence('unit', 'create')
             ->notEmpty('unit');
 
-        // $validator
-        //     ->integer('is_deleted')
-        //     ->requirePresence('is_deleted', 'create')
-        //     ->notEmpty('is_deleted');
+        $validator
+            ->add('image',[
+                'extension' => [
+                    'rule' => ['extension', ['png','jpg','jpeg']],
+                    'message' => 'Please upload PNG and JPEG format only.'
+                ]
+            ])
+            ->requirePresence('image', 'create')
+            ->allowEmpty('image');
 
         return $validator;
     }

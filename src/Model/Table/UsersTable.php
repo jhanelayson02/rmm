@@ -47,12 +47,20 @@ class UsersTable extends Table
             'foreignKey' => 'user_id'
         ]);
 
+        $this->hasMany('Tickets', [
+            'foreignKey' => 'user_id'
+        ]);
+
         $this->hasMany('Sales', [
             'foreignKey' => 'user_id'
         ]);
 
         $this->hasMany('Orders', [
             'foreignKey' => 'user_id'
+        ]);
+        
+        $this->hasMany('TReply', [
+            'foreignKey' => 'user_id',
         ]);
     }
 

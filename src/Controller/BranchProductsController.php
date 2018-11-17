@@ -176,7 +176,7 @@ class BranchProductsController extends AppController
                 }
                     
             }
-            $this->redirect(['action' => 'receipt', $sale['id'], '?' => ['redirect' => '/rmm/branch_products/pos']]);
+            $this->redirect(['action' => 'receipt', $sale['id'], '?' => ['redirect' => '/rmm/branch-products/pos']]);
             // return $this->Flash->success('Success');
 
         }

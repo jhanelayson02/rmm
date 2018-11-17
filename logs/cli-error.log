@@ -12,3 +12,22 @@ Stack Trace:
 #2 {main}
 
 
+2018-11-17 08:42:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rmm.ticket' doesn't exist in C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'ticket', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('ticket', Array)
+#2 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('ticket')
+#3 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ticket', 'Ticket')
+#7 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Ticket')
+#8 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\BakeShell.php(272): Bake\Shell\Task\ModelTask->main('Ticket')
+#9 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('ticket', 0)
+#10 C:\xampp2\htdocs\rmm\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all('ticket')
+#12 C:\xampp2\htdocs\rmm\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp2\htdocs\rmm\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

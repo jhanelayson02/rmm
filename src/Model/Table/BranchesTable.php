@@ -46,6 +46,10 @@ class BranchesTable extends Table
             'foreignKey' => 'branch_id'
         ]);
 
+        $this->hasMany('Tickets', [
+            'foreignKey' => 'branch_id'
+        ]);
+
         $this->hasMany('BranchProducts', [
             'foreignKey' => 'branch_id'
         ]);
@@ -79,10 +83,6 @@ class BranchesTable extends Table
             ->requirePresence('description', 'create')
             ->notEmpty('description');
 
-        $validator
-            ->boolean('is_main')
-            ->requirePresence('is_main', 'create')
-            ->notEmpty('is_main');
 
         return $validator;
     }

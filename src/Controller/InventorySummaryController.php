@@ -104,6 +104,7 @@ class InventorySummaryController extends AppController
     
             }
             $this->Flash->success('Inventory successfully saved!');
+            return $this->redirect(['action' => 'summary']);
         }
 
         $this->set(compact('inventorySummary', 'branches', 'products'));

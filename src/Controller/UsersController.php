@@ -21,13 +21,14 @@ class UsersController extends AppController
         $this->viewBuilder()->setLayout('');
         if($this->request->is('post')){
             $user = $this->Auth->identify();
-            $userLoggedIn = $this->Users->get($user['id'], [
-                'contain' => ['Branches']
-            ]);
-            // pr($userLoggedIn);exit;
-            $user['is_main'] = $userLoggedIn['branch']['is_main']; 
 
             if($user){
+                $userLoggedIn = $this->Users->get($user['id'], [
+                    'contain' => ['Branches']
+                ]);
+                // pr($userLoggedIn);exit;
+                $user['is_main'] = $userLoggedIn['branch']['is_main']; 
+
                 $this->Auth->setUser($user);
                 $audit = $auditTable->newEntity();
                 $audit->user_id = $user['id'];

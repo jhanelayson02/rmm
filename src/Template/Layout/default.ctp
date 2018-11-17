@@ -13,7 +13,7 @@ $cakeDescription = 'RMM';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-    <?= $this->Html->css(['jquery-ui.min','bootstrap.min', 'custom.min', 'bootstrap-datetimepicker.min']) ?>
+    <?= $this->Html->css(['jquery-ui.min','bootstrap.min', 'dataTables.bootstrap', 'custom.min', 'bootstrap-datetimepicker.min']) ?>
     <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -49,7 +49,7 @@ $cakeDescription = 'RMM';
             <br />
 
             <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu"style="min-height: -webkit-fill-available;">
                 <div class="menu_section">
                     <ul class="nav side-menu">
                         <li><?= $this->Html->link('<i class="fa fa-tachometer"></i> Dashboard  <span class="fa fa-chevron-right"></span>', ['controller' => 'cart', 'action' => 'dashboard'], ['escape' => false]); ?>
@@ -64,7 +64,10 @@ $cakeDescription = 'RMM';
                         <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
                         </li>
 
-                        <li><?= $this->Html->link('<i class="fa fa-money"></i> Sales  <span class="fa fa-chevron-right"></span>', ['controller' => 'Sales'], ['escape' => false]); ?>
+                        <li><?= $this->Html->link('<i class="fa fa-money"></i> Sales  <span class="fa fa-chevron-right"></span>', ['controller' => 'Sales', 'action' => 'index'], ['escape' => false]); ?>
+                        </li>
+                        
+                        <li><?= $this->Html->link('<i class="fa fa-ticket"></i> Tickets  <span class="fa fa-chevron-right"></span>', ['controller' => 'Tickets', 'action' => 'index'], ['escape' => false]); ?>
                         </li>
 
                         <?php if ($auth['is_main']) { ?>

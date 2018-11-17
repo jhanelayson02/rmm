@@ -23,10 +23,10 @@ class ProductsController extends AppController
     {
         $products = $this->Products->find('all', [
             'conditions' => [
-                'is_deleted' => 0
+                'NOT' => ['is_deleted' => 1]
             ]
         ]);
-
+        // pr($products->toArray());
         $this->set(compact('products'));
     }
 
@@ -126,24 +126,32 @@ class ProductsController extends AppController
     {
         if ($this->request->is('post')) {
             // pr($this->request->data);exit;
-                $db = new \mysqli('localhost', 'root', '', 'rmm');
-                if (isset($this->request->data['backup'])) {
+            $db = new \mysqli('localhost', 'root', '', 'rmm');
+            if (isset($this->request->data['backup'])) {
                 $dump = new \MySQLDump($db);
-                $dump->save('dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz');
+                $dump->save('dbase/rmm_'. date("m_d_y_h_s_i") .'.sql');
         
-                $filePath = 'dbase/rmm_'. date("m_d_y_h_s_i") .'.sql.gz';
+                $filePath = WWW_ROOT .'dbase\rmm_'. date("m_d_y_h_s_i") .'.sql';
+                // echo $filePath;exit;
                 $this->response->file($filePath ,
-                    array('download'=> true, 'name'=> 'rmm_'. date("m_d_y_h_s_i") .'.sql.gz'));
+                    array('download'=> true));
+                return $this->response;
             } elseif (isset($this->request->data['restore'])) {
-                $import = new \MySQLImport($db);
+                $fileParts = explode('.', basename($_FILES["file"]["name"]));
+                if (strtolower($fileParts[1]) == 'sql') {
+                    $import = new \MySQLImport($db);
 
-                $target_dir = "dbase/";
-                $target_file = $target_dir . basename($_FILES["file"]["name"]);
-                move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
-                $this->request->data['file'] = basename($_FILES["file"]["name"]);
+                    $target_dir = "dbase/";
+                    $target_file = $target_dir . basename($_FILES["file"]["name"]);
+                    move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+                    $this->request->data['file'] = basename($_FILES["file"]["name"]);
 
-                $import->load('dbase/' . $this->request->data['file']);
-                $this->Flash->success('Database has been restored.');
+                    $import->load('dbase/' . $this->request->data['file']);
+                    $this->Flash->success('Database has been restored.');
+                } else {
+                    $this->Flash->error('Please upload sql format only.');
+                }
+                
             }
             
         }

@@ -11,10 +11,10 @@
           <div class="row">
               <?= $this->Form->create('', ['url' => ['action' => 'reportXls']]); ?>
             <div class="col-md-3">
-                <?= $this->Form->input('start_date', ['class' => 'form-control', 'id' => 'start_date', 'value' => date('Y-m-d')]); ?>
+                <?= $this->Form->input('start_date', ['class' => 'form-control', 'id' => 'startdate', 'value' => date('Y-m-d')]); ?>
             </div>
             <div class="col-md-3">
-                <?= $this->Form->input('end_date', ['class' => 'form-control', 'id' => 'end_date', 'value' => date('Y-m-d')]); ?>
+                <?= $this->Form->input('end_date', ['class' => 'form-control', 'id' => 'enddate', 'value' => date('Y-m-d')]); ?>
             </div>
             <div class="col-md-3">
                 <?php $users['All'] = 'All Cashiers'; asort($users); ?>
@@ -28,12 +28,32 @@
       </div>
     </div>
 </div>
-
 <script>
-    $('#start_date').datetimepicker({
-        format: 'YYYY-MM-DD'
+    $('#startdate').datetimepicker({
+        format: 'YYYY-MM-DD',
+        maxDate : 'now'
     });
-    $('#end_date').datetimepicker({
-        format: 'YYYY-MM-DD'
+    $('#enddate').datetimepicker({
+        format: 'YYYY-MM-DD',
+        maxDate : 'now'
     });
+
+$(function () {
+            $('#startdate,#enddate').datetimepicker({
+                useCurrent: false,
+                minDate: moment()
+            });
+            $('#startdate').datetimepicker().on('dp.change', function (e) {
+                var incrementDay = moment(new Date(e.date));
+                $('#enddate').data('DateTimePicker').minDate(incrementDay);
+                $(this).data("DateTimePicker").hide();
+            });
+
+            $('#enddate').datetimepicker().on('dp.change', function (e) {
+                var decrementDay = moment(new Date(e.date));
+                $('#startdate').data('DateTimePicker').maxDate(decrementDay);
+                 $(this).data("DateTimePicker").hide();
+            });
+
+        });
 </script>
