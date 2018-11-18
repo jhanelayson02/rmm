@@ -135,7 +135,6 @@ class ProductsController extends AppController
                 // echo $filePath;exit;
                 $this->response->file($filePath ,
                     array('download'=> true));
-                return $this->response;
             } elseif (isset($this->request->data['restore'])) {
                 $fileParts = explode('.', basename($_FILES["file"]["name"]));
                 if (strtolower($fileParts[1]) == 'sql') {

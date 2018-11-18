@@ -23,10 +23,16 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
 
             if($user){
+
+                if ($user['is_deleted'] == 1) {
+                    $this->Flash->error(__('Your account has been archived! Please contact your admin.'));
+                    return $this->redirect($this->Auth->logout());
+                }
+
                 $userLoggedIn = $this->Users->get($user['id'], [
                     'contain' => ['Branches']
                 ]);
-                // pr($userLoggedIn);exit;
+                // pr($user);exit;
                 $user['is_main'] = $userLoggedIn['branch']['is_main']; 
 
                 $this->Auth->setUser($user);

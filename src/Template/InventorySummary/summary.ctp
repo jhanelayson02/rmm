@@ -2,7 +2,7 @@
 <div class="col-md-10 col-md-offset-1">
   <div class="x_panel">
     <div class="x_title">
-      <h2>Accuracy History</h2>
+      <h2>Inventory Summary</h2>
       <div class="clearfix"></div>
     </div>
     <div class="x_content">

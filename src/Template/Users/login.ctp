@@ -2,6 +2,7 @@
 <style>
 body {
   background-image: url('img/wallpaper.jpg');
+  background-size: cover;
   color: white;
 }
 

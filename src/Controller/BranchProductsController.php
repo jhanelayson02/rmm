@@ -81,30 +81,54 @@ class BranchProductsController extends AppController
         $this->set(compact('branchProduct', 'branches', 'products'));
     }
 
-    /**
-     * Edit method
-     *
-     * @param string|null $id Branch Product id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
     public function edit($id = null)
     {
-        $branchProduct = $this->BranchProducts->get($id, [
-            'contain' => []
+        $this->loadModel('Products');
+        $this->loadModel('BranchProducts');
+        $products = $this->Products->find('all',[
+            'contain' => [
+                'BranchProducts' => [
+                    'conditions' => [
+                        'branch_id' => $id
+                    ]
+                ], 
+                'Borrow' => [
+                    'conditions' => [
+                        'status' => 'Received'
+                    ]
+                ]
+            ]
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $branchProduct = $this->BranchProducts->patchEntity($branchProduct, $this->request->getData());
-            if ($this->BranchProducts->save($branchProduct)) {
-                $this->Flash->success(__('The branch product has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+        if ($this->request->is('post')) {
+            // pr($_POST);exit;
+            for ($x=0;$x<sizeof($this->request->data['new_quantity']);$x++) {
+                $cart = $this->BranchProducts->find('all', [
+                    'conditions' => [
+                        'branch_id' => $this->request->data['branch_id'],
+                        'product_id' => $this->request->data['product_id'][$x]
+                    ]
+                ])->first();
+    
+                if ($cart) {
+                    $this->BranchProducts->updateAll(
+                        ['quantity' => $this->request->data['new_quantity'][$x]],
+                        ['id' => $cart->id]
+                    );
+                } else {
+                    $b_productsTable = TableRegistry::get('BranchProducts');
+                    $b_products = $b_productsTable->newEntity();
+                    $b_products->branch_id = $this->request->data['branch_id'];
+                    $b_products->product_id = $this->request->data['product_id'][$x];
+                    $b_products->quantity = $this->request->data['new_quantity'][$x];
+                    $b_products = $b_productsTable->save($b_products);
+                }
             }
-            $this->Flash->error(__('The branch product could not be saved. Please, try again.'));
+            $this->Flash->success('Inventory has been updated!');
+            $this->redirect(['action' => 'view', $this->request->data['branch_id']]);
         }
-        $branches = $this->BranchProducts->Branches->find('list', ['limit' => 200]);
-        $products = $this->BranchProducts->Products->find('list', ['limit' => 200]);
-        $this->set(compact('branchProduct', 'branches', 'products'));
+
+        $this->set(compact('products'));
     }
 
     /**

@@ -13,52 +13,23 @@ use Cake\ORM\TableRegistry;
  */
 class InventorySummaryController extends AppController
 {
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
-    public function index()
-    {
-        $this->paginate = [
-            'contain' => ['Branches', 'Products']
-        ];
-        $inventorySummary = $this->paginate($this->InventorySummary);
-
-        $this->set(compact('inventorySummary'));
-    }
-
-    /**
-     * View method
-     *
-     * @param string|null $id Inventory Summary id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function view($id = null)
-    {
-        $inventorySummary = $this->InventorySummary->get($id, [
-            'contain' => ['Branches', 'Products']
-        ]);
-
-        $this->set('inventorySummary', $inventorySummary);
-    }
-
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
-     */
     public function add()
     {
         $auth = $this->request->session()->read('Auth.User');
         $this->loadModel('Products');
         $products = $this->Products->find('all',[
-            'contain' => ['BranchProducts' => [
-                'conditions' => [
-                    'branch_id' => $auth['branch_id']
+            'contain' => [
+                'BranchProducts' => [
+                    'conditions' => [
+                        'branch_id' => $auth['branch_id']
+                    ]
+                ], 
+                'Borrow' => [
+                    'conditions' => [
+                        'status' => 'Received'
+                    ]
                 ]
-            ]]
+            ]
         ]);
 
         if ($this->request->is('post')) {
