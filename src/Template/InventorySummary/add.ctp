@@ -29,12 +29,16 @@
             	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
                 <?php 
                 foreach($products as $product) :
-                    foreach ($product['borrow'] as $borrowed) {
-                        $product['branch_products'][0]['quantity'] -= $borrowed['qty'];
+                    $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
+                    foreach ($borrows as $borrowed) {
+                        if ($borrowed['branch_id'] == $auth['branch_id']) {
+                            $quantity -= $borrowed['qty'];
+                        } elseif ($borrowed['user']['branch_id'] == $auth['branch_id']) {
+                            $quantity += $borrowed['qty'];
+                        }
                     }
                 ?>
                 <tr>
-                    <?php $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0; ?>
                     <td><?= h($product->item_code) ?></td>
                     <td><?= h($product->name) ?></td>
                     <td><?= h($product->description) ?></td>

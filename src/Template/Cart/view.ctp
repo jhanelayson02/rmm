@@ -10,6 +10,7 @@
                 <p>Date: <?= $order['created'] ?></p>
             </div>
             <?php 
+                $disabled = false;
                 if ($auth['is_main'] == 1) {
                     $options = [
                         'Backlog' => 'Backlog',
@@ -20,19 +21,23 @@
                 } else {
                     $options = $order['status'] == "Delivered" ? ['Received' => 'Received'] : false;
                 }
+
+                if ($order['status'] == 'Received') {
+                    $disabled = true;
+                }
             ?>
 
             <div class="col-md-8">
                 <?= $this->Form->create('', ['url' => ['action' => 'changeStatus']]) ?>
-                <?= $this->Html->link('Edit', ['action' => 'edit', $order['id']], ['class' => 'btn btn-warning pull-right']) ?>
                 <?php if ($options) :?>
-                    <?= $this->Form->button('Submit', ['class' => 'btn btn-success col-md-3 pull-right']) ?>
+                    <?= $this->Form->button('Submit', ['class' => 'btn btn-success col-md-3 pull-right', 'disabled' => $disabled]) ?>
                     <?= $this->Form->hidden('order_id', ['value' => $order['id']]); ?>
                     <?= $this->Form->input('status', [
                         'options' => $options,
                         'class' => 'form-control col-md-9 pull-right',
                         'empty' => 'Change Status...',
                         'label' => false,
+                        'disabled' => $disabled,
                         'style' => 'width:50%',
                         'required' => true
                     ]) ?>
@@ -44,14 +49,14 @@
       </div>
       <div class="x_content">
 
-        <table class="table table-bordered">
+      <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('Product Code') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Product Name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Description') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Price') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('Quantity') ?></th>
+                <th><?= $this->Paginator->sort('Product Code') ?></th>
+                <th><?= $this->Paginator->sort('Product Name') ?></th>
+                <th><?= $this->Paginator->sort('Description') ?></th>
+                <th><?= $this->Paginator->sort('Price') ?></th>
+                <th><?= $this->Paginator->sort('Quantity') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -60,12 +65,45 @@
                 <td><?= h($cart->product->item_code) ?></td>
                 <td><?= h($cart->product->name) ?></td>
                 <td><?= h($cart->product->description) ?></td>
-                <td><?= h($cart->product->price) ?></td>
+                <td>P <?= h($cart->product->price) ?></td>
                 <td><?= h($cart->quantity) ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
-    </table>
+      </table>
+
+      
+      <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th colspan=5><h3>Billing Summary<h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $totalPrice = 0;
+            foreach ($order['cart'] as $cart): 
+                $totalPrice += $cart->product->price * $cart->quantity;
+            ?>
+            <tr>
+                <td><?= h($cart->quantity) ?></td>
+                <td><?= h($cart->product->name) ?></td>
+                <td>P <?= h($cart->product->price) ?></td>
+                <td></td>
+                <td>P <?= h($cart->product->price * $cart->quantity) ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>TOTAL</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>P <?= $totalPrice ?></th>
+            </tr>
+        </tfoot>
+      </table>
 
       </div>
     </div>

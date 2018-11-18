@@ -61,8 +61,10 @@ $cakeDescription = 'RMM';
                         <li><?= $this->Html->link('<i class="fa fa-file"></i> Inventory  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'view', $auth['branch_id']], ['escape' => false]); ?>
                         </li>
 
-                        <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
-                        </li>
+                        <?php if (!$auth['is_main']) { ?>
+                          <li><?= $this->Html->link('<i class="fa fa-shopping-cart"></i> Order  <span class="fa fa-chevron-right"></span>', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false]); ?>
+                          </li>
+                        <?php } ?>
 
                         <li><?= $this->Html->link('<i class="fa fa-money"></i> Sales  <span class="fa fa-chevron-right"></span>', ['controller' => 'Sales', 'action' => 'index'], ['escape' => false]); ?>
                         </li>

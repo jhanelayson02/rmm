@@ -27,20 +27,35 @@
                     ['class' => 'btn btn-info col-md-12']
                     ); ?>
                 </div>
-              <?php } elseif ($auth['is_main'] == 0) { ?>
-                <div class="col-md-6">
-                  <?= $this->Html->link('Products', 
-                  ['controller' => 'Products', 'action' => 'archive'],
-                  ['class' => 'btn btn-default col-md-12']
-                  ); ?>
-                </div>
-                <div class="col-md-6">
-                    <?= $this->Html->link('Accounts', 
-                    ['controller' => 'Users', 'action' => 'archive'],
+
+                <?php } elseif ($auth['is_main'] == 0) { ?>
+                    <div class="col-md-6">
+                        <?= $this->Html->link('Products', 
+                        ['controller' => 'Products', 'action' => 'archive'],
+                        ['class' => 'btn btn-default col-md-12']
+                        ); ?>
+                    </div>
+                    <div class="col-md-6">
+                        <?= $this->Html->link('Accounts', 
+                        ['controller' => 'Users', 'action' => 'archive'],
+                        ['class' => 'btn btn-info col-md-12']
+                        ); ?>
+                    </div>
+                <?php } ?>  
+
+                <div class="col-md-4 col-md-offset-2">
+                    <?= $this->Html->link('Support', 
+                    ['controller' => 'Tickets', 'action' => 'archive'],
                     ['class' => 'btn btn-info col-md-12']
                     ); ?>
                 </div>
-              <?php } ?>  
+                <div class="col-md-4">
+                    <?= $this->Html->link('Borrowing', 
+                    ['controller' => 'Borrow', 'action' => 'archive'],
+                    ['class' => 'btn btn-info col-md-12']
+                    ); ?>
+                </div> 
+
           </div>
       </div>
     </div>

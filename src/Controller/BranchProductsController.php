@@ -40,23 +40,25 @@ class BranchProductsController extends AppController
     {
         $auth = $this->request->session()->read('Auth.User');
         $this->loadModel('Products');
+        $this->loadModel('Borrow');
         $products = $this->Products->find('all',[
             'contain' => [
                 'BranchProducts' => [
                     'conditions' => [
                         'branch_id' => $auth['branch_id']
                     ]
-                ], 
-                'Borrow' => [
-                    'conditions' => [
-                        'status' => 'Received'
-                    ]
                 ]
             ]
         ]);
+        $borrows = $this->Borrow->find('all', [
+            'contain' => ['Users'],
+            'conditions' => [
+                'status' => 'Received'
+            ]
+        ]);
 
-        // pr($products->toArray());exit;
-        $this->set(compact('products'));
+        // pr($borrows->toArray());exit;
+        $this->set(compact('products', 'borrows'));
     }
 
     /**
@@ -85,23 +87,26 @@ class BranchProductsController extends AppController
     {
         $this->loadModel('Products');
         $this->loadModel('BranchProducts');
+        $this->loadModel('Borrow');
         $products = $this->Products->find('all',[
             'contain' => [
                 'BranchProducts' => [
                     'conditions' => [
                         'branch_id' => $id
                     ]
-                ], 
-                'Borrow' => [
-                    'conditions' => [
-                        'status' => 'Received'
-                    ]
                 ]
+
             ]
         ]);
+        $borrows = $this->Borrow->find('all', [
+            'contain' => ['Users'],
+            'conditions' => [
+                'status' => 'Received'
+            ]
+        ]);
+        // pr($products->toArray());exit;
 
         if ($this->request->is('post')) {
-            // pr($_POST);exit;
             for ($x=0;$x<sizeof($this->request->data['new_quantity']);$x++) {
                 $cart = $this->BranchProducts->find('all', [
                     'conditions' => [
@@ -128,7 +133,7 @@ class BranchProductsController extends AppController
             $this->redirect(['action' => 'view', $this->request->data['branch_id']]);
         }
 
-        $this->set(compact('products'));
+        $this->set(compact('products', 'borrows'));
     }
 
     /**
@@ -165,7 +170,13 @@ class BranchProductsController extends AppController
         $this->loadModel('Products');
         $this->loadModel('Sales');
         $this->loadModel('SaleItems');
-        $products = $this->Products->find('all');
+        $products = $this->Products->find('all',[
+            'conditions' => [
+                'NOT' => [
+                    'is_deleted' => 1
+                ]
+            ]
+        ]);
 
         $auth = $this->request->session()->read('Auth.User');
         if ($this->request->is('post')) {

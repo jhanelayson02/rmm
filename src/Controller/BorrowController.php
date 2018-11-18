@@ -160,4 +160,32 @@ class BorrowController extends AppController
 
         return $this->redirect($this->referer());
     }
+
+    public function archive()
+    {
+        $auth = $this->request->session()->read('Auth.User');
+
+        
+        if ($auth['is_main'] == 1) {
+            $borrow = $this->Borrow->find('all', [
+                'contain' => ['Users.Branches', 'Branches', 'Products'],
+                'conditions' => [
+                    'Borrow.is_deleted' => 1
+                ]
+            ]);
+        } else {
+            $borrow = $this->Borrow->find('all', [
+                'contain' => ['Users.Branches', 'Branches', 'Products'],
+                'conditions' => [
+                    'OR' => [
+                        'Users.branch_id' => $auth['branch_id'],
+                        'Borrow.branch_id' => $auth['branch_id']
+                    ],
+                    'Borrow.is_deleted' => 1
+                ]
+            ]);
+        }
+
+        $this->set(compact('borrow', 'branches', 'products'));
+    }
 }

@@ -1,8 +1,9 @@
 <?= $this->Html->css(['bootstrap', 'custom.min', 'font-awesome.min','dataTables.bootstrap.min', 'pos']) ?>
+<?= $this->Html->script(['jquery.min']); ?>
 <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
 <?php $auth = $this->request->session()->read('Auth.User'); ?>
 <div class="row" style="padding:20px;font-family: 'Anaheim';font-size: 12px;text-align:center;">
-  <div style="width: 20%;margin-left: 40%;">
+  <div id="receipt" style="width: 20%;margin-left: 40%;">
     <div class="x_panel">
       <div class="x_content">
         <p><?= strtoupper($sale->branch->name) ?></p>
@@ -47,6 +48,10 @@
             <div class="col-md-6" style="text-align:right;"><?= 'P' . number_format($sale->cash - $sale->amount, 2) ?></div>
         </div>
         <hr>
+        
+        <div class="row">
+            <div class="col-md-12" style="text-align:left;">Receipt #: <?= str_pad($sale->id, 8, '0', STR_PAD_LEFT); ?></div>
+        </div>
         <div class="row">
             <div class="col-md-12" style="text-align:left;">Cashier: <?= $sale->user->first_name . ' ' . $sale->user->last_name ?></div>
         </div>
@@ -67,7 +72,7 @@
   
     <div class="row">
         <div class="col-md-6"><button class="col-md-12 btn btn-default" onclick="goBack()">Back to POS</button></div>
-        <div class="col-md-6"><button class="col-md-12 btn btn-success">Print</button></div>
+        <div class="col-md-6"><button class="col-md-12 btn btn-success" onclick="printThis()">Print</button></div>
     </div>
   </div>
 </div>
@@ -75,5 +80,14 @@
     <?php $redirect = $this->request->query['redirect'] ?>
     function goBack() {
         window.location.href = <?= "'" . $redirect . "'" ?>;
+    }
+
+    function printThis() {
+        var btn = document.getElementsByClassName('btn');
+        $(btn).hide();
+        $('#receipt').attr('style', 'width: 40%;margin-left: 30%;');
+        window.print();
+        $(btn).show();
+        $('#receipt').attr('style', 'width: 20%;margin-left: 40%;');
     }
 </script>

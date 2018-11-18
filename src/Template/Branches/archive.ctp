@@ -26,6 +26,20 @@
                 ['class' => 'btn btn-info col-md-12']
                 ); ?>
             </div>
+
+            <div class="col-md-4 col-md-offset-2">
+                <?= $this->Html->link('Support', 
+                ['controller' => 'Tickets', 'action' => 'archive'],
+                ['class' => 'btn btn-info col-md-12']
+                ); ?>
+            </div>
+            <div class="col-md-4">
+                <?= $this->Html->link('Borrowing', 
+                ['controller' => 'Borrow', 'action' => 'archive'],
+                ['class' => 'btn btn-info col-md-12']
+                ); ?>
+            </div> 
+
           </div>
       </div>
     </div>

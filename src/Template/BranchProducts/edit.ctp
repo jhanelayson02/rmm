@@ -27,8 +27,13 @@
                 <?php 
                 foreach($products as $product) :
                     $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
-                    foreach ($product['borrow'] as $borrowed) {
-                        $quantity -= $borrowed['qty'];
+                    foreach ($borrows as $borrowed) {
+                        if ($borrowed['branch_id'] == $auth['branch_id']) {
+                            // echo 'pak';exit;
+                            $quantity -= $borrowed['qty'];
+                        } elseif ($borrowed['user']['branch_id'] == $auth['branch_id']) {
+                            $quantity += $borrowed['qty'];
+                        }
                     }
                 ?>
                 <tr>

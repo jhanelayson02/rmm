@@ -33,9 +33,14 @@
             	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
                 <?php 
                 foreach($products as $product) :
-                    $product['branch_products'][0]['quantity'] = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
-                    foreach ($product['borrow'] as $borrowed) {
-                        $product['branch_products'][0]['quantity'] -= $borrowed['qty'];
+                    $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
+                    foreach ($borrows as $borrowed) {
+                        if ($borrowed['branch_id'] == $auth['branch_id']) {
+                            // echo 'pak';exit;
+                            $quantity -= $borrowed['qty'];
+                        } elseif ($borrowed['user']['branch_id'] == $auth['branch_id']) {
+                            $quantity += $borrowed['qty'];
+                        }
                     }
                 ?>
                 <tr class="<?= $product['branch_products'][0]['quantity'] <= 10 ? 'bg-danger' : '' ?>">
@@ -43,7 +48,7 @@
                     <td><?= h($product->item_code) ?></td>
                     <td><?= h($product->name) ?></td>
                     <td><?= h($product->description) ?></td>
-                    <td><?= $product['branch_products'][0]['quantity'] ?></td>
+                    <td><?= $quantity ?></td>
                    
                 </tr>
                 <?php endforeach; ?>

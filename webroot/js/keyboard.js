@@ -141,6 +141,10 @@ $(document).ready(function() {
     });
 });
 
+function changeQty(obj) {
+    $("input[name='"+$(obj).attr('data-priceName')+"']").val($(obj).val()*$(obj).attr('data-price'));
+}
+
 // for qty's incr/decr
 function btnNum(obj){
     

@@ -37,8 +37,8 @@
                     <td><?= $ticket->branch->name ?></td>
                     <td><?= h($ticket->created) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('<i class="fa fa-search"></i> View'), ['action' => 'view', $ticket->id] , ['class' => 'text-primary', 'escape' => false]) ?> &nbsp;|&nbsp;
-                        <?= $this->Html->link(__('<i class="fa fa-edit"></i> Edit'), ['action' => 'edit', $ticket->id], ['class' => 'text-success', 'escape' => false]) ?> &nbsp;|&nbsp;
+                        <?= $this->Html->link(__('<i class="fa fa-search"></i> View'), ['action' => 'view', $ticket->id] , ['class' => 'text-primary', 'escape' => false]) ?>
+                        <?php //echo $this->Html->link(__('<i class="fa fa-edit"></i> Edit'), ['action' => 'edit', $ticket->id], ['class' => 'text-success', 'escape' => false]) ?> &nbsp;|&nbsp;
                         <?= $this->Form->postLink(__('<i class="fa fa-archive"></i> Archive'), ['action' => 'delete', $ticket->id, '?' => ['type' => 'archive']], ['confirm' => __('Are you sure you want to archive '. $ticket->name .'?'), 'class' => 'text-danger', 'escape' => false]) ?>
                     </td>
                 </tr>

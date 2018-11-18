@@ -48,7 +48,7 @@
                           <tr>
                             <td><?= str_pad($sale->id, 8, '0', STR_PAD_LEFT); ?></td>
                             <td><?= ($sale->cus_name == "" ? "Not Specified" : $sale->cus_name) ?></td>
-                            <td><?= $sale->discount ?> %</td>
+                            <td><?= isset($sale->discount) ? $sale->discount : 0 ?> %</td>
                             <td><?= count($sale->sale_items) ?></td>
                             <td>P <?= number_format($sale->amount, 2) ?></td>
                             <td>

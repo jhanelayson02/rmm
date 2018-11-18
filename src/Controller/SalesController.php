@@ -43,6 +43,7 @@ class SalesController extends AppController
     public function reports()
     {
         $this->loadModel('Users');
+        $this->loadModel('Branches');
 
         $users = $this->Users->find('list', [
             'keyField' => 'id',
@@ -52,7 +53,13 @@ class SalesController extends AppController
             ]
         ])->toArray();
 
-        $this->set(compact('users'));
+        $branches = $this->Branches->find('list',[
+            'conditions' => [
+                'is_main' => 0
+            ]
+        ]);
+
+        $this->set(compact('users', 'branches'));
     }
 
     public function reportXls()
@@ -80,5 +87,22 @@ class SalesController extends AppController
         // pr($sales->toArray());
         
         $this->set(compact('users'));
+    }
+
+    public function billingXls()
+    {
+        $this->loadModel('Orders');
+        $orders = $this->Orders->find('all', [
+            'contain' => ['Cart.Products', 'Users.Branches'],
+            'conditions' => [
+                'Orders.created >=' => date('Y-m-d 00:00:00', strtotime($this->request->data['start_date'])),
+                'Orders.created <=' => date('Y-m-d 23:59:59', strtotime($this->request->data['end_date'])),
+                'Users.branch_id' => $this->request->data['branch']
+            ]
+            
+        ]);
+        // pr($orders->toArray());exit;
+
+        $this->set(compact('orders'));
     }
 }

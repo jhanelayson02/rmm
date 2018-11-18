@@ -157,4 +157,33 @@ class TicketsController extends AppController
 
         return $this->redirect($this->referer());
     }
+
+    public function archive()
+    {
+        $auth = $this->request->session()->read('Auth.User');
+        
+        if ($auth['is_main'] == 1) {
+            $tickets = $this->Tickets->find('all', [
+                'contain' => ['Users.Branches', 'Branches'],
+                'conditions' => [
+                    'Tickets.is_deleted' => 1
+                ]
+            ]);
+        } else {
+            $tickets = $this->Tickets->find('all', [
+                'contain' => ['Users.Branches', 'Branches'],
+                'conditions' => [
+                    'OR' => [
+                        'Users.branch_id' => $auth['branch_id'],
+                        'Tickets.branch_id' => $auth['branch_id']
+                    ],
+                    'Tickets.is_deleted' => 1
+                ]
+            ]);
+        }
+        
+        // pr($auth);
+
+        $this->set(compact('tickets', 'branches'));
+    }
 }

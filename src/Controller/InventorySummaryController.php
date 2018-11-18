@@ -17,18 +17,20 @@ class InventorySummaryController extends AppController
     {
         $auth = $this->request->session()->read('Auth.User');
         $this->loadModel('Products');
+        $this->loadModel('Borrow');
         $products = $this->Products->find('all',[
             'contain' => [
                 'BranchProducts' => [
                     'conditions' => [
                         'branch_id' => $auth['branch_id']
                     ]
-                ], 
-                'Borrow' => [
-                    'conditions' => [
-                        'status' => 'Received'
-                    ]
                 ]
+            ]
+        ]);
+        $borrows = $this->Borrow->find('all', [
+            'contain' => ['Users'],
+            'conditions' => [
+                'status' => 'Received'
             ]
         ]);
 
@@ -78,7 +80,7 @@ class InventorySummaryController extends AppController
             return $this->redirect(['action' => 'summary']);
         }
 
-        $this->set(compact('inventorySummary', 'branches', 'products'));
+        $this->set(compact('inventorySummary', 'borrows', 'branches', 'products'));
     }
 
     /**
