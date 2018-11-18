@@ -47,6 +47,10 @@ class ProductsTable extends Table
         $this->hasMany('Cart', [
             'foreignKey' => 'product_id'
         ]);
+        
+        $this->hasMany('Borrow', [
+            'foreignKey' => 'product_id'
+        ]);
 
         $this->hasMany('SaleItems', [
             'foreignKey' => 'product_id'

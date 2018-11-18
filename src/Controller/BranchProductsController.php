@@ -41,11 +41,18 @@ class BranchProductsController extends AppController
         $auth = $this->request->session()->read('Auth.User');
         $this->loadModel('Products');
         $products = $this->Products->find('all',[
-            'contain' => ['BranchProducts' => [
-                'conditions' => [
-                    'branch_id' => $auth['branch_id']
+            'contain' => [
+                'BranchProducts' => [
+                    'conditions' => [
+                        'branch_id' => $auth['branch_id']
+                    ]
+                ], 
+                'Borrow' => [
+                    'conditions' => [
+                        'status' => 'Received'
+                    ]
                 ]
-            ]]
+            ]
         ]);
 
         // pr($products->toArray());exit;

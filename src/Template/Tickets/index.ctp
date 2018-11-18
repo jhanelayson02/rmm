@@ -71,12 +71,14 @@
                             ]);
                             
                             echo $this->Form->input('subject', [
-                                'class' => 'form-control'
+                                'class' => 'form-control',
+                                'required' => true
                             ]);
                             
                             echo $this->Form->input('description', [
                                 'class' => 'form-control',
-                                'type' => 'textarea'
+                                'type' => 'textarea',
+                                'required' => true
                             ]);
 
                             echo $this->Form->input('priority',[
@@ -103,7 +105,7 @@
                             ]);
 
                             echo $this->Form->input('branch_id', [
-                                'options' => $ticketes,
+                                'options' => $branches,
                                 'class' => 'form-control',
                                 'label' => 'Assigned to'
                             ]);

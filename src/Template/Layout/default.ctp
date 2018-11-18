@@ -49,7 +49,7 @@ $cakeDescription = 'RMM';
             <br />
 
             <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu"style="min-height: -webkit-fill-available;">
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                 <div class="menu_section">
                     <ul class="nav side-menu">
                         <li><?= $this->Html->link('<i class="fa fa-tachometer"></i> Dashboard  <span class="fa fa-chevron-right"></span>', ['controller' => 'cart', 'action' => 'dashboard'], ['escape' => false]); ?>
@@ -67,7 +67,10 @@ $cakeDescription = 'RMM';
                         <li><?= $this->Html->link('<i class="fa fa-money"></i> Sales  <span class="fa fa-chevron-right"></span>', ['controller' => 'Sales', 'action' => 'index'], ['escape' => false]); ?>
                         </li>
                         
-                        <li><?= $this->Html->link('<i class="fa fa-ticket"></i> Tickets  <span class="fa fa-chevron-right"></span>', ['controller' => 'Tickets', 'action' => 'index'], ['escape' => false]); ?>
+                        <li><?= $this->Html->link('<i class="fa fa-ticket"></i> Support  <span class="fa fa-chevron-right"></span>', ['controller' => 'Tickets', 'action' => 'index'], ['escape' => false]); ?>
+                        </li>
+                        
+                        <li><?= $this->Html->link('<i class="fa fa-book"></i> Borrowing  <span class="fa fa-chevron-right"></span>', ['controller' => 'Borrow', 'action' => 'index'], ['escape' => false]); ?>
                         </li>
 
                         <?php if ($auth['is_main']) { ?>

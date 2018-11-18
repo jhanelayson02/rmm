@@ -47,6 +47,10 @@ class UsersTable extends Table
             'foreignKey' => 'user_id'
         ]);
 
+        $this->hasMany('Borrow', [
+            'foreignKey' => 'user_id'
+        ]);
+
         $this->hasMany('Tickets', [
             'foreignKey' => 'user_id'
         ]);

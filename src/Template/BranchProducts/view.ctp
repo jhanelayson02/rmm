@@ -25,7 +25,12 @@
             </thead>
             <tbody>
             	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
-				<?php foreach($products as $product) : //pr($auth); exit; ?>
+                <?php 
+                foreach($products as $product) :
+                    foreach ($product['borrow'] as $borrowed) {
+                        $product['branch_products'][0]['quantity'] -= $borrowed['qty'];
+                    }
+                ?>
                 <tr>
 
                     <td><?= h($product->item_code) ?></td>

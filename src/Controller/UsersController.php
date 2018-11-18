@@ -34,7 +34,7 @@ class UsersController extends AppController
                 $audit->user_id = $user['id'];
                 $audit->type = 'Log-in';
                 $auditTable->save($audit);
-                return $this->redirect(['Controller'=>'users','action'=>'index']);
+                return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again.'));
         }

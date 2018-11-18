@@ -4,13 +4,6 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 
-/**
- * Tickets Controller
- *
- * @property \App\Model\Table\TicketsTable $Tickets
- *
- * @method \App\Model\Entity\Ticket[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
- */
 class TicketsController extends AppController
 {
 
@@ -33,7 +26,12 @@ class TicketsController extends AppController
         ]);
         if ($auth['is_main'] == 1) {
             $tickets = $this->Tickets->find('all', [
-                'contain' => ['Users.Branches', 'Branches']
+                'contain' => ['Users.Branches', 'Branches'],
+                'conditions' => [
+                    'NOT' => [
+                        'Tickets.is_deleted' => 1
+                    ]
+                ]
             ]);
         } else {
             $tickets = $this->Tickets->find('all', [
@@ -42,6 +40,9 @@ class TicketsController extends AppController
                     'OR' => [
                         'Users.branch_id' => $auth['branch_id'],
                         'Tickets.branch_id' => $auth['branch_id']
+                    ],
+                    'NOT' => [
+                        'Tickets.is_deleted' => 1
                     ]
                 ]
             ]);
@@ -95,10 +96,10 @@ class TicketsController extends AppController
             $ticket = $this->Tickets->patchEntity($ticket, $this->request->getData());
             if ($this->Tickets->save($ticket)) {
                 $this->Flash->success(__('The ticket has been saved.'));
-
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The ticket could not be saved. Please, try again.'));
+            return $this->redirect(['action' => 'index']);
         }
         $users = $this->Tickets->Users->find('list', ['limit' => 200]);
         $branches = $this->Tickets->Branches->find('list', ['limit' => 200]);
