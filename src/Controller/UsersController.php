@@ -127,13 +127,26 @@ class UsersController extends AppController
 
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
+            $password = $this->request->data['password'];
+            $username = $this->request->data['username'];
+            if( (!preg_match( '#[0-9]+#', $password) || !preg_match( '#[a-z]+#', $password) || !preg_match( '#[A-Z]+#', $password)) || (!preg_match( '#[0-9]+#', $username) || !preg_match( '#[a-z]+#', $username) || !preg_match( '#[A-Z]+#', $username)))
+            {
+                $this->Flash->error(__('The username and password must contain at least one lowercase letter, at least one uppercase letter and a number!'));
+            } else {
+                $user = $this->Users->patchEntity($user, $this->request->getData());
+                if ($this->Users->save($user)) {
+                    $this->Flash->success(__('The user has been saved.'));
+                    
+                    $auditTable = TableRegistry::get('Audit');
+                    $audit = $auditTable->newEntity();
+                    $audit->user_id = $auth['id'];
+                    $audit->type = 'Created an Account';
+                    $auditTable->save($audit);
 
-                return $this->redirect(['action' => 'index']);
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $this->set(compact(['user', 'branches']));
     }
@@ -161,13 +174,19 @@ class UsersController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
+            $username = $this->request->data['username'];
+            if((!preg_match( '#[0-9]+#', $username) || !preg_match( '#[a-z]+#', $username) || !preg_match( '#[A-Z]+#', $username)))
+            {
+                $this->Flash->error(__('Username must contain at least one lowercase letter, at least one uppercase letter and a number!'));
+            } else {
+                $user = $this->Users->patchEntity($user, $this->request->getData());
+                if ($this->Users->save($user)) {
+                    $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                    return $this->redirect(['action' => 'index']);
+                }
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $this->set(compact('user', 'branches'));
     }

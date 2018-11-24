@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Sales Controller
@@ -43,7 +44,9 @@ class SalesController extends AppController
     public function reports()
     {
         $this->loadModel('Users');
+        $this->loadModel('Orders');
         $this->loadModel('Branches');
+        $auth = $this->request->session()->read('Auth.User');
 
         $users = $this->Users->find('list', [
             'keyField' => 'id',
@@ -59,7 +62,42 @@ class SalesController extends AppController
             ]
         ]);
 
-        $this->set(compact('users', 'branches'));
+        if ($this->request->is('post')) {
+            // pr($_POST);
+            if (isset($this->request->data['sales'])) {
+                $condition = null;
+                if ($this->request->data['users'] != 'All') {
+                    $condition = ['Users.id' => $this->request->data['users']];
+                }
+                $reportUsers = $this->Users->find('all', [
+                    'contain' => ['Sales' => [
+                        'conditions' => [
+                            '`Sales`.`created` >=' => date('Y-m-d 00:00:00', strtotime($this->request->data['start_date'])),
+                            '`Sales`.`created` <=' => date('Y-m-d 23:59:59', strtotime($this->request->data['end_date'])),
+                        ]
+                        ], 'Sales.SaleItems'],
+                    'conditions' => [
+                        'Users.branch_id' => $auth['branch_id'],
+                        'Users.role' => 'cashier',
+                        $condition
+                    ],
+                ]);
+            } elseif (isset($this->request->data['bills'])) {
+                $orders = $this->Orders->find('all', [
+                    'contain' => ['Cart.Products', 'Users.Branches'],
+                    'conditions' => [
+                        'Orders.created >=' => date('Y-m-d 00:00:00', strtotime($this->request->data['start_date'])),
+                        'Orders.created <=' => date('Y-m-d 23:59:59', strtotime($this->request->data['end_date'])),
+                        'Users.branch_id' => $this->request->data['branch']
+                    ]
+                    
+                ]);
+            }
+            
+        // pr($orders->toArray());exit;
+        }
+
+        $this->set(compact('users', 'branches', 'reportUsers', 'orders'));
     }
 
     public function reportXls()
@@ -85,7 +123,12 @@ class SalesController extends AppController
             ],
         ]);
         // pr($sales->toArray());
-        
+        $auditTable = TableRegistry::get('Audit');
+        $audit = $auditTable->newEntity();
+        $audit->user_id = $auth['id'];
+        $audit->type = 'Generated Sales Report';
+        $auditTable->save($audit);
+
         $this->set(compact('users'));
     }
 
@@ -102,6 +145,12 @@ class SalesController extends AppController
             
         ]);
         // pr($orders->toArray());exit;
+        $auth = $this->request->session()->read('Auth.User');
+        $auditTable = TableRegistry::get('Audit');
+        $audit = $auditTable->newEntity();
+        $audit->user_id = $auth['id'];
+        $audit->type = 'Generated Billing Report';
+        $auditTable->save($audit);
 
         $this->set(compact('orders'));
     }

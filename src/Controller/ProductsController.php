@@ -129,12 +129,15 @@ class ProductsController extends AppController
             $db = new \mysqli('localhost', 'root', '', 'rmm');
             if (isset($this->request->data['backup'])) {
                 $dump = new \MySQLDump($db);
-                $dump->save('dbase/rmm_'. date("m_d_y_h_s_i") .'.sql');
+                $fname = 'dbase' . DS . 'rmm_'. date("m_d_y_h_s_i") .'.sql';
+                $dump->save($fname);
         
-                $filePath = WWW_ROOT .'dbase\rmm_'. date("m_d_y_h_s_i") .'.sql';
+                $filePath = WWW_ROOT . $fname;
                 // echo $filePath;exit;
                 $this->response->file($filePath ,
                     array('download'=> true));
+
+                return $this->response;
             } elseif (isset($this->request->data['restore'])) {
                 $fileParts = explode('.', basename($_FILES["file"]["name"]));
                 if (strtolower($fileParts[1]) == 'sql') {
