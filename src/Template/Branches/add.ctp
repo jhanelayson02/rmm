@@ -15,12 +15,13 @@
   </div>
   <div class="x_content">
 
- <?= $this->Form->create($branch) ?>
+    <?= $this->Form->create($branch, ['type' => 'file']) ?>
     <fieldset>
         <legend><?= __('Add Branch') ?></legend>
         <?php
             echo $this->Form->control('name',['class' => 'form-control']);
             echo $this->Form->control('description',['class' => 'form-control']);
+            echo $this->Form->input('image',['class' => 'form-control', 'type' => 'file']);
         ?>
     </fieldset><br>
     <?= $this->Form->button('Submit', ['class' => 'btn btn-success']) ?>

@@ -54,6 +54,10 @@ class BranchesController extends AppController
     {
         $branch = $this->Branches->newEntity();
         if ($this->request->is('post')) {
+            $target_dir = "img/branches/";
+            $target_file = $target_dir . basename($_FILES["image"]["name"]);
+            move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+            $this->request->data['image'] = basename($_FILES["image"]["name"]);
             $branch = $this->Branches->patchEntity($branch, $this->request->getData());
             if ($this->Branches->save($branch)) {
                 $this->Flash->success(__('The branch has been saved.'));
@@ -79,6 +83,10 @@ class BranchesController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+            $target_dir = "img/branches/";
+            $target_file = $target_dir . basename($_FILES["image"]["name"]);
+            move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+            $this->request->data['image'] = basename($_FILES["image"]["name"]);
             $branch = $this->Branches->patchEntity($branch, $this->request->getData());
             if ($this->Branches->save($branch)) {
                 $this->Flash->success(__('The branch has been saved.'));

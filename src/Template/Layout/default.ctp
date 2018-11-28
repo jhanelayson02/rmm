@@ -29,7 +29,11 @@ $cakeDescription = 'RMM';
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a class="site_title"><i class="fa fa-cutlery"></i> <span>RMM Meatshop</span></a>
+              <?php if ($auth['image'] != '') : ?>
+                <img src="/rmm/img/branches/<?= $auth['image'] ?>" alt="" style="height: 80px;">
+              <?php else : ?>
+                <a class="site_title"><i class="fa fa-cutlery"></i> <span>RMM Meatshop</span></a>
+              <?php endif ?>
             </div>
 
             <div class="clearfix"></div>

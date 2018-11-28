@@ -25,9 +25,6 @@ class Branch extends Entity
      * @var array
      */
     protected $_accessible = [
-        'name' => true,
-        'description' => true,
-        'is_main' => true,
-        'created' => true
+        '*' => true,
     ];
 }

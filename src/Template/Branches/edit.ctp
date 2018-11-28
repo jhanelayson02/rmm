@@ -12,7 +12,7 @@
 <div class="col-md-6 col-md-offset-3 col-sm-6 col-xs-12">
     <div class="x_panel">
         <div class="x_title">
-            <?= $this->Form->create($branch) ?>
+            <?= $this->Form->create($branch, ['type' => 'file']) ?>
         </div>
         <div class="x_content">
                 <fieldset>
@@ -20,6 +20,7 @@
                     <?php
                         echo $this->Form->control('name', ['class' => 'form-control']);
                         echo $this->Form->control('description', ['class' => 'form-control']);
+                        echo $this->Form->input('image',['class' => 'form-control', 'type' => 'file']);
                     ?>
                 </fieldset>
                 <?= $this->Form->button('Submit',['class' => 'btn btn-success']) ?>

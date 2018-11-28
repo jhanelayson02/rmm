@@ -32,8 +32,9 @@ class UsersController extends AppController
                 $userLoggedIn = $this->Users->get($user['id'], [
                     'contain' => ['Branches']
                 ]);
-                // pr($user);exit;
+                // pr($userLoggedIn);exit;
                 $user['is_main'] = $userLoggedIn['branch']['is_main']; 
+                $user['image'] = $userLoggedIn['branch']['image']; 
 
                 $this->Auth->setUser($user);
                 $audit = $auditTable->newEntity();
