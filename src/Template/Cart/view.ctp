@@ -7,13 +7,14 @@
                 <p><h2> Orders (<?= $order['status'] ?>) </h2></p><br><br>
                 <p>Ordered by: <?= $order['user']['first_name'] . ' ' . $order['user']['last_name'] ?></p>
                 <p>Branch: <?= $order['user']['branch']['name'] ?></p>
-                <p>Date: <?= $order['created'] ?></p>
+                <p>Date requested: <?= $order['created'] ?></p>
+                <?= isset($order['delivered']) ? '<p>Date delivered:' . $order['delivered'] . '</p>': '' ?>
+                <?= isset($order['received']) ? '<p>Date received: ' . $order['received'] . '</p>': '' ?>
             </div>
-            <?php 
+            <?php
                 $disabled = false;
                 if ($auth['is_main'] == 1) {
                     $options = [
-                        'Backlog' => 'Backlog',
                         'In-Progress' => 'In-Progress',
                         'Delivered' => 'Delivered',
                         'Received' => 'Received',
@@ -72,7 +73,7 @@
         </tbody>
       </table>
 
-      
+
       <table class="table table-borderless">
         <thead>
             <tr>
@@ -82,7 +83,7 @@
         <tbody>
             <?php
             $totalPrice = 0;
-            foreach ($order['cart'] as $cart): 
+            foreach ($order['cart'] as $cart):
                 $totalPrice += $cart->product->price * $cart->quantity;
             ?>
             <tr>
