@@ -6932,3 +6932,2083 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+2018-12-01 07:52:34 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:52:34 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:52:34 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:52:34 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:52:34 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:10 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:10 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:10 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:10 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:10 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:23 Notice: Notice (8): Undefined variable: inventorySummary in [C:\xampp2\htdocs\rmm\src\Template\InventorySummary\summary.ctp, line 14]
+Request URL: /inventory-summary/summary
+Referer URL: http://localhost/rmm/inventory-summary/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\InventorySummary\summary.ctp, line 14
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:23 Notice: Notice (8): Undefined variable: inventorySummary in [C:\xampp2\htdocs\rmm\src\Template\InventorySummary\summary.ctp, line 23]
+Request URL: /inventory-summary/summary
+Referer URL: http://localhost/rmm/inventory-summary/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\InventorySummary\summary.ctp, line 23
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:41 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:41 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:41 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:41 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:41 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:48 Notice: Notice (8): Undefined variable: inventorySummary in [C:\xampp2\htdocs\rmm\src\Template\InventorySummary\summary.ctp, line 14]
+Request URL: /inventory-summary/summary
+Referer URL: http://localhost/rmm/inventory-summary/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\InventorySummary\summary.ctp, line 14
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:53:48 Notice: Notice (8): Undefined variable: inventorySummary in [C:\xampp2\htdocs\rmm\src\Template\InventorySummary\summary.ctp, line 23]
+Request URL: /inventory-summary/summary
+Referer URL: http://localhost/rmm/inventory-summary/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\InventorySummary\summary.ctp, line 23
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:48 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:48 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:48 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:48 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:48 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/view/4
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:53 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:53 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:53 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:53 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:55:53 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:30 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:30 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:30 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:30 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:30 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:36 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:36 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:36 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:36 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:57:36 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/view/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:07 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:07 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:07 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:07 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:07 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 07:58:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales/reports
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales/reports
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales/reports
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales/reports
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales/reports
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:24 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/dashboard
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:24 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/dashboard
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:24 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/dashboard
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:24 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/dashboard
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 08:05:24 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/cart/dashboard
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:06 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:47 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:47 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:47 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:47 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 09:38:47 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/branch-products/order
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:19:39 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:19:39 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:19:39 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:19:39 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:19:39 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/sales
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:42:31 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/inventory-summary/summary
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:42:31 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/inventory-summary/summary
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:42:31 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/inventory-summary/summary
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:42:31 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/inventory-summary/summary
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-01 11:42:31 Notice: Notice (8): Undefined offset: 0 in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\view.ctp, line 46]
+Request URL: /branch-products/view/2
+Referer URL: http://localhost/rmm/inventory-summary/summary
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\view.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-12-02 12:01:25 Notice: Notice (8): Undefined variable: transactions in [C:\xampp2\htdocs\rmm\src\Template\BranchProducts\receipt.ctp, line 11]
+Request URL: /branch-products/receipt/24?redirect=%2Frmm%2Fbranch-products%2Fpos
+Referer URL: http://localhost/rmm/branch-products/pos
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+include - APP/Template\BranchProducts\receipt.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1203
+Cake\View\View::_render() - CORE\src\View\View.php, line 1164
+Cake\View\View::render() - CORE\src\View\View.php, line 772
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 623
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 109
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+

@@ -11,8 +11,18 @@
                 <div class="x_content">
                     <?= $this->Form->create('') ?>
                     <div id="wrap">
-                        <label for="">Customer(optional): </label>
-                        <input type="text" name="cus_name" class="form-control">
+                        <div class="row">
+                            <label for="">Customer Info (optional): </label>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_name" class="form-control" placeholder="Name...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_add" class="form-control" placeholder="Address...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_num" class="form-control" placeholder="Contact no...">
+                            </div>
+                        </div>
                     </div>
                     <table class="table no-border">
                         <tr>

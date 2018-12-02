@@ -53,6 +53,9 @@
             <div class="col-md-12" style="text-align:left;">Receipt #: <?= str_pad($sale->id, 8, '0', STR_PAD_LEFT); ?></div>
         </div>
         <div class="row">
+            <div class="col-md-12" style="text-align:left;">Transaction #: <?= str_pad(count($transactions[date('Y-m-d')]), 8, '0', STR_PAD_LEFT); ?></div>
+        </div>
+        <div class="row">
             <div class="col-md-12" style="text-align:left;">Cashier: <?= $sale->user->first_name . ' ' . $sale->user->last_name ?></div>
         </div>
         <div class="row">

@@ -170,6 +170,7 @@ class BranchProductsController extends AppController
         $this->loadModel('Products');
         $this->loadModel('Sales');
         $this->loadModel('SaleItems');
+        
         $products = $this->Products->find('all',[
             'conditions' => [
                 'NOT' => [
@@ -234,7 +235,8 @@ class BranchProductsController extends AppController
             'contain' => ['SaleItems.Products','Users','Branches']
         ]);
         // pr($sale);exit;
+        $transactions = $this->loadComponent('Sales')->saleSummary();
 
-        $this->set(compact('sale'));
+        $this->set(compact('sale', 'transactions'));
     }
 }
