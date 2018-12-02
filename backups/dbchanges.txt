@@ -1,0 +1,7 @@
+
+Add image in branches
+
+ALTER TABLE `rmm`.`orders`
+ADD COLUMN `inprogress` DATETIME NULL AFTER `created`,
+ADD COLUMN `delivered` DATETIME NULL AFTER `inprogress`,
+ADD COLUMN `received` DATETIME NULL AFTER `delivered`;

@@ -149,7 +149,7 @@ class CartController extends AppController
         ]
       ]);
       $this->Orders->updateAll(
-        ['status' => $this->request->data['status']],
+        ['status' => $this->request->data['status'], (strtolower($this->request->data['status']) == 'in-progress' ? 'inprogress' : strtolower($this->request->data['status'])) => date('Y-m-d h:i:s')],
         ['id' => $this->request->data['order_id']]
       );
       // pr($orders->toArray());exit;
@@ -184,7 +184,7 @@ class CartController extends AppController
                 $b_products->quantity = $order->quantity;
                 $b_products = $b_productsTable->save($b_products);
             }
-            
+
 
             $this->Cart->updateAll(
                 ['is_pending' => 1],
