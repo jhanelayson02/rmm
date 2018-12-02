@@ -34,6 +34,7 @@ class UsersController extends AppController
                 ]);
                 // pr($userLoggedIn);exit;
                 $user['is_main'] = $userLoggedIn['branch']['is_main']; 
+                $user['branch_name'] = $userLoggedIn['branch']['name']; 
                 $user['image'] = $userLoggedIn['branch']['image']; 
 
                 $this->Auth->setUser($user);

@@ -134,4 +134,28 @@ class BranchesController extends AppController
 
         $this->set(compact('branches'));
     }
+
+    public function dashboard()
+    {
+        $this->loadModel('Users');
+        $this->loadModel('BranchProducts');
+        $monthly = $this->loadComponent('Sales')->monthly();
+        $transactions = $this->loadComponent('Sales')->saleSummary();
+        $auth = $this->request->session()->read('Auth.User');
+        // pr($monthly);exit;
+
+        $users = $this->Users->find('all', [
+            'conditions' => [
+                'branch_id' => $auth['branch_id'],
+                'is_deleted !=' => 1
+            ]
+        ])->toArray();
+        $products = $this->BranchProducts->find('all', [
+            'conditions' => [
+                'branch_id' => $auth['branch_id']
+            ]
+        ])->toArray();
+
+        $this->set(compact('monthly', 'users', 'products', 'transactions'));
+    }
 }

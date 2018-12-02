@@ -37,4 +37,28 @@ class SalesComponent extends Component
 
         return $summary;
     }
+
+    public function monthly()
+    {
+        $this->Sales = TableRegistry::get('Sales');
+        $auth = $this->request->session()->read('Auth.User');
+
+        $sales = $this->Sales->find('all', [
+            'contain' => ['Users'],
+            'conditions' => [
+                'Users.branch_id' => $auth['branch_id']
+            ]
+        ])->toArray();
+
+        foreach ($sales as $sale) {
+            if (!isset($summary[date('M Y', strtotime($sale->created))])) {
+                $summary[date('M Y', strtotime($sale->created))] = $sale->amount;
+            } else {
+                $summary[date('M Y', strtotime($sale->created))] += $sale->amount;
+            }
+            
+        }
+
+        return $summary;
+    }
 }

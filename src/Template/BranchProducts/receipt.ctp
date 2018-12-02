@@ -62,6 +62,17 @@
             <div class="col-md-12" style="text-align:left;">Date: <?= date('M d, Y h:s:i A', strtotime($sale->created)) ?></div>
         </div>
         <hr>
+
+        <div class="row">
+            <div class="col-md-12" style="text-align:left;">Customer Name: <?= $sale->cus_name != '' ? $sale->cus_name : '_______________' ?></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:left;">Address: <?= $sale->cus_add != '' ? $sale->cus_add : '_____________________' ?></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:left;">Contact #: <?= $sale->cus_num != '' ? $sale->cus_num : '___________________' ?></div>
+        </div>
+        <hr>
         
         <div class="row">
             <div class="col-md-12">- THIS SERVES AS YOUR SALES INVOICE -</div>

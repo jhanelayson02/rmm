@@ -51,8 +51,17 @@
                         </tr>
                         <tr>
                             <td>Discount</td>
-                            <td>N/A</td>
-                            <td style="text-align:right">P 0.00</td>
+                            <td><?= $this->Form->input('discount', [
+                                'options' => [
+                                    '' => 'N/A',
+                                    'senior' => 'Senior Citizen',
+                                    'pwd' => 'PWD'
+                                ],
+                                'class' => 'form-control',
+                                'onchange' => 'discount(this)',
+                                'label' => false
+                            ]); ?></td>
+                            <td style="text-align:right" id="discount">P 0.00</td>
                         </tr>
                         <tr>
                             <td>Total</td>
@@ -223,6 +232,12 @@
         $('#grandTotalInput').val(parseFloat(totalPoints).toFixed(2));
     }
     
+    function discount(obj)
+    {
+        if ($(obj).val() != '') {
+
+        }
+    }
     function change(obj)
     {
         $('#change').html(parseFloat($(obj).val()-$('#grandTotalInput').val()).toFixed(2));

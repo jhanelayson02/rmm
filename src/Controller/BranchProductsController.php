@@ -186,6 +186,8 @@ class BranchProductsController extends AppController
             $sale = $salesTable->newEntity();
             $sale->user_id = $auth['id'];
             $sale->cus_name = $this->request->data['cus_name'];
+            $sale->cus_add = $this->request->data['cus_add'];
+            $sale->cus_num = $this->request->data['cus_num'];
             $sale->branch_id = $auth['branch_id'];
             $sale->amount = $this->request->data['total'];
             $sale->cash_change = $this->request->data['payment'] - $this->request_data['total'];
