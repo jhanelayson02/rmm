@@ -1,6 +1,6 @@
--- Created at 28.11.2018 17:27 using David Grudl MySQL Dump Utility
+-- Created at 3.12.2018 4:59 using David Grudl MySQL Dump Utility
 -- Host: localhost
--- MySQL Server: 5.5.5-10.1.36-MariaDB
+-- MySQL Server: 5.5.5-10.2.10-MariaDB-10.2.10+maria~jessie
 -- Database: rmm
 
 SET NAMES utf8;
@@ -15,10 +15,10 @@ DROP TABLE IF EXISTS `audit`;
 CREATE TABLE `audit` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
   `type` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=237 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=293 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `audit` DISABLE KEYS;
 
@@ -258,7 +258,63 @@ INSERT INTO `audit` (`id`, `user_id`, `created`, `type`) VALUES
 (233,	18,	'2018-11-28 17:16:08',	'Log-out'),
 (234,	15,	'2018-11-28 17:16:16',	'Log-in'),
 (235,	15,	'2018-11-28 17:16:25',	'Log-out'),
-(236,	18,	'2018-11-28 17:16:35',	'Log-in');
+(236,	18,	'2018-11-28 17:16:35',	'Log-in'),
+(237,	18,	'2018-12-01 07:42:05',	'Log-in'),
+(238,	18,	'2018-12-01 07:45:26',	'Log-out'),
+(239,	15,	'2018-12-01 07:45:36',	'Log-in'),
+(240,	15,	'2018-12-01 08:05:32',	'Log-out'),
+(241,	18,	'2018-12-01 08:05:43',	'Log-in'),
+(242,	18,	'2018-12-01 08:11:04',	'Log-out'),
+(243,	15,	'2018-12-01 08:11:14',	'Log-in'),
+(244,	15,	'2018-12-01 09:38:00',	'Log-in'),
+(245,	15,	'2018-12-01 10:54:54',	'Log-in'),
+(246,	15,	'2018-12-01 11:49:06',	'Log-out'),
+(247,	18,	'2018-12-01 11:49:16',	'Log-in'),
+(248,	18,	'2018-12-01 14:06:51',	'Log-in'),
+(249,	18,	'2018-12-01 23:43:13',	'Log-in'),
+(250,	18,	'2018-12-01 23:43:14',	'Log-out'),
+(251,	18,	'2018-12-01 23:43:20',	'Log-in'),
+(252,	18,	'2018-12-02 02:14:40',	'Log-in'),
+(253,	18,	'2018-12-02 02:20:27',	'Log-out'),
+(254,	9,	'2018-12-02 02:20:36',	'Log-in'),
+(255,	9,	'2018-12-02 02:34:39',	'Log-out'),
+(256,	18,	'2018-12-02 02:34:47',	'Log-in'),
+(257,	18,	'2018-12-02 10:47:53',	'Log-in'),
+(258,	18,	'2018-12-02 11:14:06',	'Log-in'),
+(259,	18,	'2018-12-02 11:49:29',	'Log-out'),
+(260,	18,	'2018-12-02 11:49:34',	'Log-in'),
+(261,	18,	'2018-12-02 11:49:38',	'Log-out'),
+(262,	9,	'2018-12-02 11:49:46',	'Log-in'),
+(263,	9,	'2018-12-02 12:35:31',	'Log-out'),
+(264,	9,	'2018-12-02 12:35:37',	'Log-in'),
+(265,	9,	'2018-12-02 13:09:27',	'Log-out'),
+(266,	18,	'2018-12-02 13:09:40',	'Log-in'),
+(267,	18,	'2018-12-02 14:28:43',	'Log-in'),
+(268,	18,	'2018-12-02 17:09:44',	'Log-in'),
+(269,	18,	'2018-12-02 18:22:38',	'Log-in'),
+(270,	18,	'2018-12-02 18:44:55',	'Log-out'),
+(271,	18,	'2018-12-02 18:45:02',	'Log-in'),
+(272,	18,	'2018-12-02 18:45:26',	'Log-in'),
+(273,	18,	'2018-12-02 19:04:15',	'Log-out'),
+(274,	9,	'2018-12-02 19:04:24',	'Log-in'),
+(275,	9,	'2018-12-02 19:16:04',	'Log-out'),
+(276,	18,	'2018-12-02 19:16:15',	'Log-in'),
+(277,	18,	'2018-12-03 02:06:09',	'Log-in'),
+(278,	18,	'2018-12-03 02:06:54',	'Created an Account'),
+(279,	18,	'2018-12-03 02:07:01',	'Log-out'),
+(280,	26,	'2018-12-03 02:07:09',	'Log-in'),
+(281,	26,	'2018-12-03 02:07:15',	'Log-out'),
+(282,	26,	'2018-12-03 03:31:29',	'Log-in'),
+(283,	26,	'2018-12-03 03:31:35',	'Log-out'),
+(284,	26,	'2018-12-03 03:31:45',	'Log-in'),
+(285,	26,	'2018-12-03 03:31:51',	'Log-out'),
+(286,	26,	'2018-12-03 04:13:55',	'Log-in'),
+(287,	26,	'2018-12-03 04:14:43',	'Log-out'),
+(288,	18,	'2018-12-03 04:14:48',	'Log-in'),
+(289,	18,	'2018-12-03 04:56:28',	'Log-out'),
+(290,	26,	'2018-12-03 04:56:35',	'Log-in'),
+(291,	26,	'2018-12-03 04:59:04',	'Log-out'),
+(292,	18,	'2018-12-03 04:59:08',	'Log-in');
 ALTER TABLE `audit` ENABLE KEYS;
 
 
@@ -275,7 +331,7 @@ CREATE TABLE `borrow` (
   `qty` float NOT NULL,
   `status` varchar(255) NOT NULL,
   `created` datetime DEFAULT NULL,
-  `is_deleted` int(11) NOT NULL DEFAULT '0',
+  `is_deleted` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
@@ -301,30 +357,31 @@ CREATE TABLE `branch_products` (
   `branch_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `expired` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `branch_products` DISABLE KEYS;
 
-INSERT INTO `branch_products` (`id`, `branch_id`, `product_id`, `quantity`, `created`) VALUES
-(1,	1,	13,	368,	'2018-08-18 07:15:13'),
-(2,	1,	15,	921,	'2018-08-18 07:15:13'),
-(3,	1,	16,	299,	'2018-08-18 07:15:13'),
-(4,	1,	17,	236,	'2018-08-18 07:15:14'),
-(5,	1,	19,	388,	'2018-08-18 07:15:14'),
-(6,	1,	18,	320,	'2018-08-18 07:26:41'),
-(7,	2,	13,	0,	'2018-09-15 08:24:41'),
-(8,	2,	15,	-2,	'2018-09-15 08:24:41'),
-(9,	2,	16,	-4,	'2018-09-15 08:24:41'),
-(10,	2,	17,	-4,	'2018-09-15 08:24:42'),
-(11,	2,	18,	2,	'2018-09-15 08:24:42'),
-(12,	2,	19,	2,	'2018-09-15 08:24:42'),
-(13,	1,	23,	323,	'2018-11-18 10:42:24'),
-(14,	1,	24,	228,	'2018-11-18 10:42:25'),
-(15,	1,	25,	150,	'2018-11-18 10:42:25'),
-(16,	1,	26,	401,	'2018-11-18 10:42:25'),
-(17,	1,	27,	654,	'2018-11-18 10:42:25');
+INSERT INTO `branch_products` (`id`, `branch_id`, `product_id`, `quantity`, `created`, `expired`) VALUES
+(1,	1,	13,	261,	'2018-08-18 07:15:13',	'2018-12-05'),
+(2,	1,	15,	813,	'2018-08-18 07:15:13',	'2018-12-04'),
+(3,	1,	16,	199,	'2018-08-18 07:15:13',	'2018-12-12'),
+(4,	1,	17,	135,	'2018-08-18 07:15:14',	'2018-12-04'),
+(5,	1,	19,	288,	'2018-08-18 07:15:14',	'2018-12-03'),
+(6,	1,	18,	220,	'2018-08-18 07:26:41',	'2018-12-03'),
+(7,	2,	13,	0,	'2018-09-15 08:24:41',	NULL),
+(8,	2,	15,	-2,	'2018-09-15 08:24:41',	NULL),
+(9,	2,	16,	-4,	'2018-09-15 08:24:41',	NULL),
+(10,	2,	17,	-4,	'2018-09-15 08:24:42',	NULL),
+(11,	2,	18,	2,	'2018-09-15 08:24:42',	NULL),
+(12,	2,	19,	2,	'2018-09-15 08:24:42',	NULL),
+(13,	1,	23,	222,	'2018-11-18 10:42:24',	'2018-12-03'),
+(14,	1,	24,	128,	'2018-11-18 10:42:25',	'2018-12-06'),
+(15,	1,	25,	50,	'2018-11-18 10:42:25',	'2018-12-20'),
+(16,	1,	26,	301,	'2018-11-18 10:42:25',	'2018-12-12'),
+(17,	1,	27,	554,	'2018-11-18 10:42:25',	'2018-12-05');
 ALTER TABLE `branch_products` ENABLE KEYS;
 
 
@@ -337,17 +394,17 @@ CREATE TABLE `branches` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `description` varchar(6000) NOT NULL,
-  `is_main` tinyint(1) NOT NULL DEFAULT '0',
+  `is_main` tinyint(1) NOT NULL DEFAULT 0,
   `image` varchar(255) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `is_deleted` int(11) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_deleted` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `branches` DISABLE KEYS;
 
 INSERT INTO `branches` (`id`, `name`, `description`, `is_main`, `image`, `created`, `is_deleted`) VALUES
-(1,	'RMM Meatshop Magalang',	'604 Manuel L Quezon St, Angeles, Pampanga',	1,	'main.png',	'2018-02-03 10:04:34',	0),
+(1,	'RMM Meatshop Main',	'604 Manuel L Quezon St, Angeles, Pampanga',	1,	'',	'2018-02-03 10:04:34',	0),
 (2,	'RMM Meatshop Friendship',	'tesst',	0,	'friendship.png',	'2018-03-06 12:20:42',	0),
 (3,	'RMM Meatshop Capaya',	'test',	0,	'',	'2018-11-17 08:52:21',	0),
 (4,	'RMM Meatshop Madapdap',	'test',	0,	'Madapdap.png',	'2018-11-28 16:55:59',	0);
@@ -364,11 +421,11 @@ CREATE TABLE `cart` (
   `branch_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
-  `is_pending` int(11) NOT NULL DEFAULT '0',
+  `is_pending` int(11) NOT NULL DEFAULT 0,
   `quantity` int(11) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `cart` DISABLE KEYS;
 
@@ -405,7 +462,10 @@ INSERT INTO `cart` (`id`, `branch_id`, `product_id`, `order_id`, `is_pending`, `
 (30,	2,	18,	8,	1,	3,	'2018-11-24 12:57:37'),
 (31,	2,	23,	8,	1,	21,	'2018-11-24 12:57:37'),
 (32,	2,	24,	8,	1,	5,	'2018-11-24 12:57:38'),
-(33,	2,	25,	8,	1,	10,	'2018-11-24 12:57:38');
+(33,	2,	25,	8,	1,	10,	'2018-11-24 12:57:38'),
+(34,	2,	26,	10,	1,	1,	'2018-12-01 09:39:02'),
+(35,	2,	25,	11,	1,	21,	'2018-12-01 10:55:15'),
+(36,	2,	16,	12,	1,	4,	'2018-12-01 10:57:10');
 ALTER TABLE `cart` ENABLE KEYS;
 
 
@@ -423,7 +483,7 @@ CREATE TABLE `inventory_summary` (
   `variance` varchar(255) NOT NULL,
   `created` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `inventory_summary` DISABLE KEYS;
 
@@ -467,7 +527,18 @@ INSERT INTO `inventory_summary` (`id`, `branch_id`, `product_id`, `quantity`, `a
 (37,	1,	24,	231,	232,	'1',	'2018-11-18'),
 (38,	1,	25,	150,	151,	'1',	'2018-11-18'),
 (39,	1,	26,	401,	399,	'-2',	'2018-11-18'),
-(40,	1,	27,	654,	650,	'-4',	'2018-11-18');
+(40,	1,	27,	654,	650,	'-4',	'2018-11-18'),
+(41,	2,	13,	50,	0,	'-50',	'2018-12-01'),
+(42,	2,	15,	48,	0,	'-48',	'2018-12-01'),
+(43,	2,	16,	46,	0,	'-46',	'2018-12-01'),
+(44,	2,	17,	46,	0,	'-46',	'2018-12-01'),
+(45,	2,	18,	52,	0,	'-52',	'2018-12-01'),
+(46,	2,	19,	52,	0,	'-52',	'2018-12-01'),
+(47,	2,	23,	50,	0,	'-50',	'2018-12-01'),
+(48,	2,	24,	50,	0,	'-50',	'2018-12-01'),
+(49,	2,	25,	50,	1,	'-49',	'2018-12-01'),
+(50,	2,	26,	50,	0,	'-50',	'2018-12-01'),
+(51,	2,	27,	50,	0,	'-50',	'2018-12-01');
 ALTER TABLE `inventory_summary` ENABLE KEYS;
 
 
@@ -480,21 +551,28 @@ CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `status` varchar(255) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `inprogress` datetime DEFAULT NULL,
+  `delivered` datetime DEFAULT NULL,
+  `received` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `orders` DISABLE KEYS;
 
-INSERT INTO `orders` (`id`, `user_id`, `status`, `created`) VALUES
-(1,	9,	'Received',	'2018-08-18 07:14:26'),
-(2,	9,	'Backlog',	'2018-08-18 07:25:11'),
-(3,	9,	'Received',	'2018-08-18 07:27:11'),
-(4,	8,	'Received',	'2018-09-02 04:49:12'),
-(5,	9,	'Delivered',	'2018-09-09 13:47:45'),
-(6,	9,	'In-Progress',	'2018-09-22 03:32:04'),
-(7,	14,	'Backlog',	'2018-10-28 00:09:17'),
-(8,	15,	'Delivered',	'2018-11-24 12:57:37');
+INSERT INTO `orders` (`id`, `user_id`, `status`, `created`, `inprogress`, `delivered`, `received`) VALUES
+(1,	9,	'Received',	'2018-08-18 07:14:26',	NULL,	NULL,	NULL),
+(2,	9,	'Backlog',	'2018-08-18 07:25:11',	NULL,	NULL,	NULL),
+(3,	9,	'Received',	'2018-08-18 07:27:11',	NULL,	NULL,	NULL),
+(4,	8,	'Received',	'2018-09-02 04:49:12',	NULL,	NULL,	NULL),
+(5,	9,	'Delivered',	'2018-09-09 13:47:45',	NULL,	NULL,	NULL),
+(6,	9,	'In-Progress',	'2018-09-22 03:32:04',	NULL,	NULL,	NULL),
+(7,	14,	'Backlog',	'2018-10-28 00:09:17',	NULL,	NULL,	NULL),
+(8,	15,	'Delivered',	'2018-11-24 12:57:37',	NULL,	NULL,	NULL),
+(9,	15,	'Backlog',	'2018-12-01 07:54:13',	NULL,	NULL,	NULL),
+(10,	15,	'Backlog',	'2018-12-01 09:39:02',	NULL,	NULL,	NULL),
+(11,	15,	'Backlog',	'2018-12-01 10:55:14',	NULL,	NULL,	NULL),
+(12,	15,	'Backlog',	'2018-12-01 10:57:10',	NULL,	NULL,	NULL);
 ALTER TABLE `orders` ENABLE KEYS;
 
 
@@ -513,8 +591,8 @@ CREATE TABLE `products` (
   `price` float NOT NULL,
   `unit` varchar(255) NOT NULL,
   `image` varchar(1000) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `is_deleted` int(11) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_deleted` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
@@ -546,9 +624,9 @@ CREATE TABLE `sale_items` (
   `product_id` int(11) NOT NULL,
   `qty` float NOT NULL,
   `cost` float NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `sale_items` DISABLE KEYS;
 
@@ -617,7 +695,16 @@ INSERT INTO `sale_items` (`id`, `sale_id`, `product_id`, `qty`, `cost`, `created
 (62,	21,	25,	4,	1080,	'2018-11-24 12:01:47'),
 (63,	22,	19,	1,	60,	'2018-11-24 12:01:58'),
 (64,	22,	27,	1,	285.25,	'2018-11-24 12:01:58'),
-(65,	22,	25,	1,	270,	'2018-11-24 12:01:58');
+(65,	22,	25,	1,	270,	'2018-11-24 12:01:58'),
+(66,	23,	13,	1,	341,	'2018-12-02 02:22:33'),
+(67,	23,	15,	6,	1500,	'2018-12-02 02:22:34'),
+(68,	24,	13,	4,	1364,	'2018-12-02 11:49:58'),
+(69,	25,	13,	1,	341,	'2018-12-02 12:35:48'),
+(70,	25,	15,	1,	250,	'2018-12-02 12:35:48'),
+(71,	26,	23,	1,	217,	'2018-12-02 12:38:00'),
+(72,	27,	13,	1,	341,	'2018-12-02 12:39:27'),
+(73,	27,	15,	1,	250,	'2018-12-02 12:39:27'),
+(74,	28,	17,	1,	120,	'2018-12-02 13:03:08');
 ALTER TABLE `sale_items` ENABLE KEYS;
 
 
@@ -630,38 +717,47 @@ CREATE TABLE `sales` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `branch_id` int(11) NOT NULL,
+  `cus_name` varchar(255) NOT NULL,
+  `cus_add` varchar(500) NOT NULL,
+  `cus_num` varchar(255) NOT NULL,
   `amount` float NOT NULL,
   `cash` float NOT NULL,
   `cash_change` float NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `sales` DISABLE KEYS;
 
-INSERT INTO `sales` (`id`, `user_id`, `branch_id`, `amount`, `cash`, `cash_change`, `created`) VALUES
-(1,	14,	1,	1087,	1087,	1087,	'2018-10-28 05:21:03'),
-(2,	14,	1,	500,	500,	500,	'2018-10-28 06:20:31'),
-(3,	14,	1,	500,	500,	500,	'2018-10-28 06:20:38'),
-(4,	14,	1,	591,	591,	591,	'2018-10-28 06:20:49'),
-(5,	14,	1,	717,	717,	717,	'2018-10-28 06:21:25'),
-(6,	14,	1,	341,	341,	341,	'2018-10-28 08:19:52'),
-(7,	14,	1,	2328,	2500,	2500,	'2018-10-28 09:11:47'),
-(8,	14,	1,	2018,	2500,	2500,	'2018-10-28 09:13:09'),
-(9,	14,	1,	1591,	1600,	1600,	'2018-10-28 10:32:11'),
-(10,	14,	1,	1591,	1591,	1591,	'2018-11-17 09:31:38'),
-(11,	9,	1,	1635,	2000,	2000,	'2018-11-18 11:39:08'),
-(12,	9,	1,	341,	341,	341,	'2018-11-18 12:42:37'),
-(13,	9,	1,	500,	500,	500,	'2018-11-18 12:59:30'),
-(14,	9,	1,	980,	1080,	1080,	'2018-11-18 13:33:40'),
-(15,	9,	1,	1050,	1050,	1050,	'2018-11-18 13:50:49'),
-(16,	11,	2,	1241,	1245,	1245,	'2018-11-24 11:59:47'),
-(17,	11,	2,	1283,	1290,	1290,	'2018-11-24 12:00:05'),
-(18,	11,	2,	1715,	2000,	2000,	'2018-11-24 12:00:24'),
-(19,	11,	2,	1085,	1085,	1085,	'2018-11-24 12:01:05'),
-(20,	8,	2,	1526,	1526,	1526,	'2018-11-24 12:01:34'),
-(21,	8,	2,	1630,	1630,	1630,	'2018-11-24 12:01:47'),
-(22,	8,	2,	615,	615,	615,	'2018-11-24 12:01:58');
+INSERT INTO `sales` (`id`, `user_id`, `branch_id`, `cus_name`, `cus_add`, `cus_num`, `amount`, `cash`, `cash_change`, `created`) VALUES
+(1,	14,	1,	'',	'',	'',	1087,	1087,	1087,	'2018-10-28 05:21:03'),
+(2,	14,	1,	'',	'',	'',	500,	500,	500,	'2018-10-28 06:20:31'),
+(3,	14,	1,	'',	'',	'',	500,	500,	500,	'2018-10-28 06:20:38'),
+(4,	14,	1,	'',	'',	'',	591,	591,	591,	'2018-10-28 06:20:49'),
+(5,	14,	1,	'',	'',	'',	717,	717,	717,	'2018-10-28 06:21:25'),
+(6,	14,	1,	'',	'',	'',	341,	341,	341,	'2018-10-28 08:19:52'),
+(7,	14,	1,	'',	'',	'',	2328,	2500,	2500,	'2018-10-28 09:11:47'),
+(8,	14,	1,	'',	'',	'',	2018,	2500,	2500,	'2018-10-28 09:13:09'),
+(9,	14,	1,	'',	'',	'',	1591,	1600,	1600,	'2018-10-28 10:32:11'),
+(10,	14,	1,	'',	'',	'',	1591,	1591,	1591,	'2018-11-17 09:31:38'),
+(11,	9,	1,	'',	'',	'',	1635,	2000,	2000,	'2018-11-18 11:39:08'),
+(12,	9,	1,	'',	'',	'',	341,	341,	341,	'2018-11-18 12:42:37'),
+(13,	9,	1,	'',	'',	'',	500,	500,	500,	'2018-11-18 12:59:30'),
+(14,	9,	1,	'',	'',	'',	980,	1080,	1080,	'2018-11-18 13:33:40'),
+(15,	9,	1,	'',	'',	'',	1050,	1050,	1050,	'2018-11-18 13:50:49'),
+(16,	11,	2,	'',	'',	'',	1241,	1245,	1245,	'2018-11-24 11:59:47'),
+(17,	11,	2,	'',	'',	'',	1283,	1290,	1290,	'2018-11-24 12:00:05'),
+(18,	11,	2,	'',	'',	'',	1715,	2000,	2000,	'2018-11-24 12:00:24'),
+(19,	11,	2,	'',	'',	'',	1085,	1085,	1085,	'2018-11-24 12:01:05'),
+(20,	8,	2,	'',	'',	'',	1526,	1526,	1526,	'2018-11-24 12:01:34'),
+(21,	8,	2,	'',	'',	'',	1630,	1630,	1630,	'2018-11-24 12:01:47'),
+(22,	8,	2,	'',	'',	'',	615,	615,	615,	'2018-11-24 12:01:58'),
+(23,	9,	1,	'',	'',	'',	1841,	1841,	1841,	'2018-12-02 02:22:33'),
+(24,	9,	1,	'',	'',	'',	1364,	1364,	1364,	'2018-12-02 11:49:58'),
+(25,	9,	1,	'',	'',	'',	591,	595,	595,	'2018-12-02 12:35:48'),
+(26,	9,	1,	'test',	'',	'',	217,	217,	217,	'2018-12-02 12:38:00'),
+(27,	9,	1,	'Neljohn',	'Capaya',	'09169181519',	591,	600,	600,	'2018-12-02 12:39:27'),
+(28,	9,	1,	'',	'',	'',	120,	120,	120,	'2018-12-02 13:03:08');
 ALTER TABLE `sales` ENABLE KEYS;
 
 
@@ -675,7 +771,7 @@ CREATE TABLE `t_reply` (
   `user_id` int(11) NOT NULL,
   `ticket_id` int(11) NOT NULL,
   `message` varchar(6000) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
@@ -709,8 +805,8 @@ CREATE TABLE `tickets` (
   `priority` varchar(100) NOT NULL,
   `user_id` int(11) NOT NULL,
   `branch_id` int(11) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `is_deleted` int(11) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_deleted` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
@@ -734,33 +830,35 @@ CREATE TABLE `users` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
   `role` varchar(255) DEFAULT NULL,
   `branch_id` int(11) NOT NULL,
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `is_deleted` int(11) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT current_timestamp(),
+  `is_deleted` int(11) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `users` DISABLE KEYS;
 
-INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `password`, `role`, `branch_id`, `created`, `is_deleted`) VALUES
-(8,	'Neljohn',	'Ayson',	'jayson',	'$2y$10$IKJCgO3B7gy3jOYibHYJp.ar3kN3xrUBmI1n2JYl2Gk6fxWJ6rKs.',	'cashier',	2,	'2018-03-10 06:41:34',	0),
-(9,	'Denes',	'Cordova',	'dens',	'$2y$10$.n.DOPpC8/HslPUQBwjh4e3zz/0nRuITY8ST1TvLmgGlqm.6onXVe',	'cashier',	1,	'2018-03-11 04:10:52',	0),
-(10,	'Jasper',	'Ayson',	'Jas123',	'$2y$10$ih0Jnh6Zo/xyKzIhrsDD1.9ojHbJZAv.UQrS6UfvOgWWKPUGnAGSS',	'admin',	1,	'2018-06-28 05:01:46',	0),
-(11,	'jasper',	'ayson',	'jasper123',	'$2y$10$Jnelti2YfWxUur10/4z10.uvdn/x2qCxoVYuMlmMrfPwOQBy.AMIa',	'cashier',	2,	'2018-07-24 09:42:12',	0),
-(14,	'Jane',	'Doe',	'jane',	'$2y$10$7P.kt.8Ih0Zt.PqNXetvaeBT55l2Jm.t7WhK6vNSbiuNtGavc/RZi',	'cashier',	1,	'2018-10-20 03:22:25',	0),
-(15,	'John',	'Doe',	'notmain',	'$2y$10$WrUndgJ8oIzlLp1DAZFfh.09DLhXx0AcG8bwihi.C8AdFXDGbtSlu',	'admin',	2,	'2018-10-20 04:30:41',	0),
-(16,	'Nel-john',	'Ayson',	'neljohn',	'$2y$10$zrnR9Hj.YC3oXemJ1sEdjeipOiKxn1aW8euuuqzEHa4qojZnx.Pba',	'admin',	1,	'2018-10-27 07:49:54',	1),
-(17,	'test',	'test',	'dens12',	'$2y$10$YrI0IjBA4y6KgFaT6GeYWetirr0mDkhYLdMLIV9OI/AU4LWQ8HO7.',	'cashier',	1,	'2018-11-17 07:39:12',	1),
-(18,	'Nel-john',	'Ayson',	'nel',	'$2y$10$ZHBo0.yR2KGu3SsHB5MnceJRIr2yDeOCJQaOkc9VBG1xyKorf67XS',	'admin',	1,	'2018-11-18 09:55:56',	0),
-(19,	'rar',	'afsf',	'Tnel123-',	'$2y$10$j624xEIRsey6zinC/Z2T9uHwK6D2a53hzXbQ1tcp0JRtGpX3JGgQe',	'cashier',	1,	'2018-11-24 09:23:30',	0),
-(20,	'41',	'41234',	'nelfsdf123',	'$2y$10$7G6HfXVGXbJKABk/Km6ikOGTBeopeViABd7vEs6JQKi/70JMDYCNe',	'cashier',	1,	'2018-11-24 09:30:35',	0),
-(21,	'uyigi',	'iujhi',	'nel4',	'$2y$10$4GT9LAGmcK2vkLJVjUvGWu5JVZg50NyzGyjyXDOPXbC7gl22jH0ru',	'cashier',	1,	'2018-11-24 09:30:58',	0),
-(22,	'lplnkl',	'nmkljl',	'nelmnlnlm',	'$2y$10$SemHZINJ7diESpomCFaVR.bdBnsexMhfjP0HTWrShblVA7tC0CHDe',	'cashier',	1,	'2018-11-24 09:31:36',	0),
-(23,	'sdfgd',	'gsfg',	'nel1',	'$2y$10$91NDv0lYu6VX0ceHtw4LV.dgGzryNExBhZ9P1MGQCqMGJKF.CmxAS',	'cashier',	1,	'2018-11-24 10:04:55',	0),
-(24,	'gsftgs',	'gsfg',	'nelgsdfg123A',	'$2y$10$KQrIt9JsaZ866w8z2KjVdeIPmHUILSdIkeCsrEpL.i1Js.Vb2OvtS',	'cashier',	1,	'2018-11-24 10:06:33',	0),
-(25,	'test',	'test',	'Test123',	'$2y$10$M3/adG3cmtS/mubmhRVCf.0InMhrwuWFGM405TCIKsFiXUDfYx2R2',	'admin',	3,	'2018-11-28 17:14:03',	0);
+INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `email`, `password`, `role`, `branch_id`, `created`, `is_deleted`) VALUES
+(8,	'Neljohn',	'Ayson',	'jayson',	NULL,	'$2y$10$IKJCgO3B7gy3jOYibHYJp.ar3kN3xrUBmI1n2JYl2Gk6fxWJ6rKs.',	'cashier',	2,	'2018-03-10 06:41:34',	0),
+(9,	'Denes',	'Cordova',	'dens',	NULL,	'$2y$10$.n.DOPpC8/HslPUQBwjh4e3zz/0nRuITY8ST1TvLmgGlqm.6onXVe',	'cashier',	1,	'2018-03-11 04:10:52',	0),
+(10,	'Jasper',	'Ayson',	'Jas123',	NULL,	'$2y$10$ih0Jnh6Zo/xyKzIhrsDD1.9ojHbJZAv.UQrS6UfvOgWWKPUGnAGSS',	'admin',	1,	'2018-06-28 05:01:46',	0),
+(11,	'Jas',	'Ayson',	'Jasper12',	NULL,	'$2y$10$Jnelti2YfWxUur10/4z10.uvdn/x2qCxoVYuMlmMrfPwOQBy.AMIa',	'cashier',	2,	'2018-07-24 09:42:12',	0),
+(14,	'Jane',	'Doe',	'jane',	NULL,	'$2y$10$7P.kt.8Ih0Zt.PqNXetvaeBT55l2Jm.t7WhK6vNSbiuNtGavc/RZi',	'cashier',	1,	'2018-10-20 03:22:25',	0),
+(15,	'John',	'Doe',	'notmain',	NULL,	'$2y$10$WrUndgJ8oIzlLp1DAZFfh.09DLhXx0AcG8bwihi.C8AdFXDGbtSlu',	'admin',	2,	'2018-10-20 04:30:41',	0),
+(16,	'Nel-john',	'Ayson',	'neljohn',	NULL,	'$2y$10$zrnR9Hj.YC3oXemJ1sEdjeipOiKxn1aW8euuuqzEHa4qojZnx.Pba',	'admin',	1,	'2018-10-27 07:49:54',	1),
+(17,	'test',	'test',	'dens12',	NULL,	'$2y$10$YrI0IjBA4y6KgFaT6GeYWetirr0mDkhYLdMLIV9OI/AU4LWQ8HO7.',	'cashier',	1,	'2018-11-17 07:39:12',	1),
+(18,	'Nel-john',	'Ayson',	'nel',	NULL,	'$2y$10$ZHBo0.yR2KGu3SsHB5MnceJRIr2yDeOCJQaOkc9VBG1xyKorf67XS',	'admin',	1,	'2018-11-18 09:55:56',	0),
+(19,	'rar',	'afsf',	'Tnel123-',	NULL,	'$2y$10$j624xEIRsey6zinC/Z2T9uHwK6D2a53hzXbQ1tcp0JRtGpX3JGgQe',	'cashier',	1,	'2018-11-24 09:23:30',	0),
+(20,	'41',	'41234',	'nelfsdf123',	NULL,	'$2y$10$7G6HfXVGXbJKABk/Km6ikOGTBeopeViABd7vEs6JQKi/70JMDYCNe',	'cashier',	1,	'2018-11-24 09:30:35',	0),
+(21,	'uyigi',	'iujhi',	'nel4',	NULL,	'$2y$10$4GT9LAGmcK2vkLJVjUvGWu5JVZg50NyzGyjyXDOPXbC7gl22jH0ru',	'cashier',	1,	'2018-11-24 09:30:58',	0),
+(22,	'lplnkl',	'nmkljl',	'nelmnlnlm',	NULL,	'$2y$10$SemHZINJ7diESpomCFaVR.bdBnsexMhfjP0HTWrShblVA7tC0CHDe',	'cashier',	1,	'2018-11-24 09:31:36',	0),
+(23,	'sdfgd',	'gsfg',	'nel1',	NULL,	'$2y$10$91NDv0lYu6VX0ceHtw4LV.dgGzryNExBhZ9P1MGQCqMGJKF.CmxAS',	'cashier',	1,	'2018-11-24 10:04:55',	0),
+(24,	'gsftgs',	'gsfg',	'nelgsdfg123A',	NULL,	'$2y$10$KQrIt9JsaZ866w8z2KjVdeIPmHUILSdIkeCsrEpL.i1Js.Vb2OvtS',	'cashier',	1,	'2018-11-24 10:06:33',	0),
+(25,	'test',	'test',	'Test123',	NULL,	'$2y$10$M3/adG3cmtS/mubmhRVCf.0InMhrwuWFGM405TCIKsFiXUDfYx2R2',	'admin',	3,	'2018-11-28 17:14:03',	0),
+(26,	'jan',	'manguil',	'Jan123',	'janjanmanguil@gmail.com',	'$2y$10$BDQVA50qgnJesmDmisxpme4Syu5LeRLqhoEm2zg8.eAAlGbGDMPLG',	'admin',	3,	'2018-12-03 02:06:54',	0);
 ALTER TABLE `users` ENABLE KEYS;
 
 

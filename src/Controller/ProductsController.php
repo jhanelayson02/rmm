@@ -126,7 +126,7 @@ class ProductsController extends AppController
     {
         if ($this->request->is('post')) {
             // pr($this->request->data);exit;
-            $db = new \mysqli('localhost', 'root', '', 'rmm');
+            $db = new \mysqli('172.17.0.2', 'root', 'root', 'rmm');
             if (isset($this->request->data['backup'])) {
                 $dump = new \MySQLDump($db);
                 $fname = 'dbase' . DS . 'rmm_'. date("m_d_y_h_s_i") .'.sql';

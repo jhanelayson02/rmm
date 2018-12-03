@@ -28,11 +28,6 @@ class BranchProduct extends Entity
      * @var array
      */
     protected $_accessible = [
-        'branch_id' => true,
-        'product_id' => true,
-        'quantity' => true,
-        'created' => true,
-        'branch' => true,
-        'product' => true
+        '*' => true
     ];
 }

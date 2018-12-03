@@ -8,16 +8,16 @@
                 <h3><?= __('Inventory') ?></h3>
             </div>
             <div class="col-md-6">
-                <?php if ($auth['is_main'] == 1) {
+                <?php
                     echo $this->Html->link(__('Edit Inventory'), ['action' => 'edit', $auth['branch_id']],['class' => 'btn-warning btn pull-right']);
-                } ?>
+                ?>
                 <?= $this->Html->link(__('Actual Inventory'), ['controller' => 'InventorySummary', 'action' => 'add'],['class' => 'btn-success btn pull-right']) ?>
             </div>
         </div>
       </div>
       <div class="x_content">
         <div class="well">
-            <h5>Note: Products with <span class="bg-danger" style="color:black;">RED</span> background are the stocks with less than 10 count.</h5>
+            <h5>Note: Products with <span class="bg-danger" style="color:black;">RED</span> background are the stocks with less than 10 count or stocks that will expire in 2 days.</h5>
         </div>
         <table id="datatable" class="table table-bordered">
             <thead>
@@ -25,13 +25,14 @@
                     <th scope="col" style="width:10%">Product Code</th>
                     <th scope="col">Product Name</th>
                     <th scope="col">Description</th>
+                    <th scope="col">Expiration</th>
                     <th scope="col" style="width: 10%">Quantity</th>
-                    
+
                 </tr>
             </thead>
             <tbody>
             	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
-                <?php 
+                <?php
                 foreach($products as $product) :
                     $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
                     foreach ($borrows as $borrowed) {
@@ -42,14 +43,18 @@
                             $quantity += $borrowed['qty'];
                         }
                     }
+                    $expiration = !isset($product['branch_products'][0]['expired'])? date('Y-m-d') : date('Y-m-d', strtotime($product['branch_products'][0]['expired']));
+                    $diff = date_diff(new DateTime($expiration), new DateTime());
+
                 ?>
-                <tr class="<?= $product['branch_products'][0]['quantity'] <= 10 ? 'bg-danger' : '' ?>">
+                <tr class="<?= $quantity <= 10 || $diff->format('%d') <2 ? 'bg-danger' : '' ?>">
 
                     <td><?= h($product->item_code) ?></td>
                     <td><?= h($product->name) ?></td>
                     <td><?= h($product->description) ?></td>
+                    <td><?= h(date('M d, Y', strtotime($expiration))) ?></td>
                     <td><?= $quantity ?></td>
-                   
+
                 </tr>
                 <?php endforeach; ?>
             </tbody>

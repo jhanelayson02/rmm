@@ -104,7 +104,6 @@ class BranchProductsController extends AppController
                 'status' => 'Received'
             ]
         ]);
-        // pr($products->toArray());exit;
 
         if ($this->request->is('post')) {
             for ($x=0;$x<sizeof($this->request->data['new_quantity']);$x++) {
@@ -117,7 +116,7 @@ class BranchProductsController extends AppController
 
                 if ($cart) {
                     $this->BranchProducts->updateAll(
-                        ['quantity' => $this->request->data['new_quantity'][$x]],
+                        ['quantity' => $this->request->data['new_quantity'][$x], 'expired' => date('Y-m-d', strtotime($this->request->data['expired'][$x]))],
                         ['id' => $cart->id]
                     );
                 } else {
@@ -126,6 +125,7 @@ class BranchProductsController extends AppController
                     $b_products->branch_id = $this->request->data['branch_id'];
                     $b_products->product_id = $this->request->data['product_id'][$x];
                     $b_products->quantity = $this->request->data['new_quantity'][$x];
+                    $b_products->expired = strtotime($this->request->data['expired'][$x]);
                     $b_products = $b_productsTable->save($b_products);
                 }
             }
@@ -171,7 +171,7 @@ class BranchProductsController extends AppController
         $this->loadModel('Products');
         $this->loadModel('Sales');
         $this->loadModel('SaleItems');
-        
+
         $products = $this->Products->find('all',[
             'conditions' => [
                 'NOT' => [

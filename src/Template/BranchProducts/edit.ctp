@@ -17,14 +17,17 @@
                     <th scope="col" style="width:10%">Product Code</th>
                     <th scope="col">Product Name</th>
                     <th scope="col">Description</th>
+                    <th scope="col">Expiration Date:</th>
                     <th scope="col" style="width: 10%">Quantity</th>
-                    <th scope="col" style="width: 10%">New Quantity</th>
-                    
+                    <?php if ($auth['is_main'] == 1) { ?>
+                      <th scope="col" style="width: 10%">New Quantity</th>
+                    <?php } ?>
+
                 </tr>
             </thead>
             <tbody>
             	<?= $this->Form->hidden('branch_id', ['value' => $auth['branch_id']]) ?>
-                <?php 
+                <?php
                 foreach($products as $product) :
                     $quantity = isset($product['branch_products'][0]['quantity']) ? $product['branch_products'][0]['quantity'] : 0;
                     foreach ($borrows as $borrowed) {
@@ -40,19 +43,23 @@
                     <td><?= h($product->item_code) ?></td>
                     <td><?= h($product->name) ?></td>
                     <td><?= h($product->description) ?></td>
-                    <td><?= $quantity ?></td>
-                    <td>
-                    	<?= $this->Form->input('new_quantity[]', [
-                            'type' => 'number',
-                    		'class' => 'form-control',
-                    		'label' => false,
-                            'placeholder' => 0,
-                            'min' => 0,
-                            'value' => $quantity
-                    		]) ?>
-                    	<?= $this->Form->hidden('product_id[]', ['value' => $product->id]) ?>
+                    <td><input type="date" name="expired[]" min="<?= date('Y-m-d') ?>" value="<?= date('Y-m-d', strtotime((!isset($product['branch_products'][0]['expired'])? date('Y-m-d') : $product['branch_products'][0]['expired']))) ?>">
                     </td>
-                   
+                    <td><?= $quantity ?></td>
+                    <?php if ($auth['is_main'] == 1) { ?>
+                      <td>
+                      	<?= $this->Form->input('new_quantity[]', [
+                              'type' => 'number',
+                      		'class' => 'form-control',
+                      		'label' => false,
+                              'placeholder' => 0,
+                              'min' => 0,
+                              'value' => $quantity
+                      		]) ?>
+                      	<?= $this->Form->hidden('product_id[]', ['value' => $product->id]) ?>
+                      </td>
+                    <?php } ?>
+
                 </tr>
                 <?php endforeach; ?>
             </tbody>
