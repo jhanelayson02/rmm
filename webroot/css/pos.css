@@ -177,3 +177,9 @@ section p{font-family:'Lato', sans-serif;}
 .services a:hover{color:#000;}
 .services h1{margin-top:0px !important;}
 .heading-container p{font-family:'Lato', sans-serif;text-align:center;font-size:16px !important;text-transform:uppercase;}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

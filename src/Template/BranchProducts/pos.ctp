@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-7"><br>
             <div class="x_panel" style="min-height:95%">
                 <div class="x_title">
@@ -115,7 +115,7 @@
                             <div class="tab-content margin-tops">
                             <div class="tab-pane active fade in" id="tab_default_1">
                             <?php foreach ($products as $product) { ?>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>" data-max="<?= $product->branch_products[0]->quantity ?>">
                                     <div class="hovereffect">
                                         <img class="img-responsive" src="/rmm/img/products/<?= $product->image ?>" alt="">
                                         <div class="overlay">
@@ -129,7 +129,7 @@
                             <div class="tab-pane fade" id="tab_default_2">
                             <?php foreach ($products as $product) {
                                 if ($product->type == 'pork') { ?>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>" data-max="<?= $product->branch_products[0]->quantity ?>">
                                     <div class="hovereffect">
                                         <img class="img-responsive" src="/rmm/img/products/<?= $product->image ?>" alt="">
                                         <div class="overlay">
@@ -143,7 +143,7 @@
                             <div class="tab-pane fade" id="tab_default_3">
                             <?php foreach ($products as $product) {
                                 if ($product->type == 'chicken' ) { ?>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>" data-max="<?= $product->branch_products[0]->quantity ?>">
                                     <div class="hovereffect">
                                         <img class="img-responsive" src="/rmm/img/products/<?= $product->image ?>" alt="">
                                         <div class="overlay">
@@ -157,7 +157,7 @@
                             <div class="tab-pane fade" id="tab_default_4">
                             <?php foreach ($products as $product) {
                                 if ($product->type == 'beef') { ?>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>" data-max="<?= $product->branch_products[0]->quantity ?>">
                                     <div class="hovereffect">
                                         <img class="img-responsive" src="/rmm/img/products/<?= $product->image ?>" alt="">
                                         <div class="overlay">
@@ -171,7 +171,7 @@
                             <div class="tab-pane fade" id="tab_default_5">
                             <?php foreach ($products as $product) {
                                 if ($product->type == 'value-added') { ?>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" onclick="add(this)" data-id="<?= $product->id ?>" data-name="<?= $product->name ?>" data-price="<?= $product->price ?>" data-max="<?= $product->branch_products[0]->quantity ?>">
                                     <div class="hovereffect">
                                         <img class="img-responsive" src="/rmm/img/products/<?= $product->image ?>" alt="">
                                         <div class="overlay">
@@ -198,9 +198,9 @@
     {
         $('.empty').hide();
         if ($('#well' + $(obj).data('id')).length == 0) {
-            $('.order').append('<div class="well" id="well'+ $(obj).data('id') +'"><div class="row"><div class="col-md-3"><a href="#" class="remove_field"><i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="color:#d9534f"></i></a> '+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control keyboard-normal input-number" onchange="changeQty(this)" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'" value="1" min="1" max="100"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" name="prod_total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'" readonly></div></div></div>');
+            $('.order').append('<div class="well" id="well'+ $(obj).data('id') +'"><div class="row"><div class="col-md-3"><a href="#" class="remove_field"><i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="color:#d9534f"></i></a> '+ $(obj).data('name') +'</div><div class="col-md-3">P '+ $(obj).data('price') +'</div><div class="col-md-3"><div class="input-group"><span class="input-group-btn"><button type="button" class="btn btn-danger btn-number minus"  data-type="minus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-minus"></span></button></span><input type="text" name="quant['+ $(obj).data('id') +']" class="form-control keyboard-normal input-number" onchange="changeQty(this)" max='+ $(obj).data('max') +' style="padding:0;" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'" value="1" min="1"><span class="input-group-btn"><button type="button" class="btn btn-success btn-number plus" data-type="plus" onclick="btnNum(this)" data-field="quant['+ $(obj).data('id') +']" data-priceName="prod_total['+ $(obj).data('id') +']" data-price="'+ $(obj).data('price') +'"><span class="glyphicon glyphicon-plus"></span></button></span></div></div><div class="col-md-3"><input type="text" class="total" style="width: -webkit-fill-available;" name="prod_total['+ $(obj).data('id') +']" value="'+ $(obj).data('price') +'" readonly></div></div></div>');
         }
-        
+
         var totalPoints = 0;
         $('.total').each(function(){
             totalPoints += parseInt($(this).val()); //<==== a catch  in here !! read below
@@ -212,7 +212,7 @@
         $('#grandTotal3').val(parseFloat(totalPoints).toFixed(2));
         $('#grandTotalInput').val(parseFloat(totalPoints).toFixed(2));
     }
-    
+
     function change(obj)
     {
         $('#change').html(parseFloat($(obj).val()-$('#grandTotalInput').val()).toFixed(2));

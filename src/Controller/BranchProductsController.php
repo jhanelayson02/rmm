@@ -114,7 +114,7 @@ class BranchProductsController extends AppController
                         'product_id' => $this->request->data['product_id'][$x]
                     ]
                 ])->first();
-    
+
                 if ($cart) {
                     $this->BranchProducts->updateAll(
                         ['quantity' => $this->request->data['new_quantity'][$x]],
@@ -166,6 +166,7 @@ class BranchProductsController extends AppController
 
     public function pos()
     {
+        $auth = $this->request->session()->read('Auth.User');
         $this->viewBuilder()->setLayout('');
         $this->loadModel('Products');
         $this->loadModel('Sales');
@@ -175,10 +176,15 @@ class BranchProductsController extends AppController
                 'NOT' => [
                     'is_deleted' => 1
                 ]
+            ],
+            'contain' => [
+              'BranchProducts' => [
+                'conditions' => ['branch_id' => $auth['branch_id']]
+              ]
             ]
         ]);
+        // pr($products->toArray());exit;
 
-        $auth = $this->request->session()->read('Auth.User');
         if ($this->request->is('post')) {
             // pr($this->request->data);exit;
             $salesTable = TableRegistry::get('Sales');
@@ -190,7 +196,6 @@ class BranchProductsController extends AppController
             $sale->cash_change = $this->request->data['payment'] - $this->request_data['total'];
             $sale->cash = $this->request->data['payment'];
             $salesTable->save($sale);
-            // pr($sale->validationErrors);exit;
 
             foreach ($this->request->data['quant'] as $prod_id => $qty) {
 
@@ -208,7 +213,7 @@ class BranchProductsController extends AppController
                         'product_id' => $prod_id
                     ]
                 ])->first();
-    
+
                 if ($cart) {
                     $quantity = $cart->quantity - $qty;
                     $this->BranchProducts->updateAll(
@@ -216,7 +221,7 @@ class BranchProductsController extends AppController
                         ['id' => $cart->id]
                     );
                 }
-                    
+
             }
             $this->redirect(['action' => 'receipt', $sale['id'], '?' => ['redirect' => '/rmm/branch-products/pos']]);
             // return $this->Flash->success('Success');
