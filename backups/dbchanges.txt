@@ -5,3 +5,11 @@ ALTER TABLE `rmm`.`orders`
 ADD COLUMN `inprogress` DATETIME NULL AFTER `created`,
 ADD COLUMN `delivered` DATETIME NULL AFTER `inprogress`,
 ADD COLUMN `received` DATETIME NULL AFTER `delivered`;
+
+7j5UeGWaCSsYcRX
+
+dbase
+localhost
+id8093642_root - user
+rmmmeatshop - pass
+id8093642_rmm - dbname

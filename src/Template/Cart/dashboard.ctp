@@ -1,5 +1,8 @@
 <?php $auth = $this->request->session()->read('Auth.User'); ?>
 <div class="col-md-12">
+  <div class="col-md-12">
+    <?= $this->Html->link('<i class="fa fa-shopping-cart"></i> New Order ', ['controller' => 'BranchProducts', 'action' => 'order'], ['escape' => false, 'class' => 'btn btn-success pull-right']); ?>
+</div>
   <div class="row">
     <div class="col-md-3">
       <div class="row">

@@ -11,8 +11,18 @@
                 <div class="x_content">
                     <?= $this->Form->create('') ?>
                     <div id="wrap">
-                        <label for="">Customer(optional): </label>
-                        <input type="text" name="cus_name" class="form-control">
+                        <div class="row">
+                            <label for="">Customer Info (optional): </label>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_name" class="form-control" placeholder="Name...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_add" class="form-control" placeholder="Address...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="cus_num" class="form-control" placeholder="Contact no...">
+                            </div>
+                        </div>
                     </div>
                     <table class="table no-border">
                         <tr>
@@ -41,8 +51,17 @@
                         </tr>
                         <tr>
                             <td>Discount</td>
-                            <td>N/A</td>
-                            <td style="text-align:right">P 0.00</td>
+                            <td><?= $this->Form->input('discount', [
+                                'options' => [
+                                    '' => 'N/A',
+                                    'senior' => 'Senior Citizen',
+                                    'pwd' => 'PWD'
+                                ],
+                                'class' => 'form-control',
+                                'onchange' => 'discount(this)',
+                                'label' => false
+                            ]); ?></td>
+                            <td style="text-align:right" id="discount">P 0.00</td>
                         </tr>
                         <tr>
                             <td>Total</td>
@@ -213,6 +232,12 @@
         $('#grandTotalInput').val(parseFloat(totalPoints).toFixed(2));
     }
 
+    function discount(obj)
+    {
+        if ($(obj).val() != '') {
+
+        }
+    }
     function change(obj)
     {
         $('#change').html(parseFloat($(obj).val()-$('#grandTotalInput').val()).toFixed(2));
