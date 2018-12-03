@@ -19,6 +19,7 @@
                 echo $this->Form->control('first_name', ['class' => 'form-control']);
                 echo $this->Form->control('last_name', ['class' => 'form-control']);
                 echo $this->Form->control('username', ['class' => 'form-control']);
+                echo $this->Form->control('email', ['class' => 'form-control', 'type' => 'email']);
                 echo $this->Form->control('password', ['class' => 'form-control']);
                 echo $this->Form->input('role', [
                   'options' => ['cashier' => 'Cashier', 'admin' => 'Admin'],

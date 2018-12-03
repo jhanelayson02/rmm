@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -14,6 +15,11 @@ use Cake\ORM\TableRegistry;
 class UsersController extends AppController
 {
 
+    public function beforeFilter(Event $event)
+    {
+        // allow only login, forgotpassword
+         $this->Auth->allow(['login', 'forgot', 'newpass']);
+    }
 
     public function login()
     {
@@ -33,9 +39,9 @@ class UsersController extends AppController
                     'contain' => ['Branches']
                 ]);
                 // pr($userLoggedIn);exit;
-                $user['is_main'] = $userLoggedIn['branch']['is_main']; 
-                $user['branch_name'] = $userLoggedIn['branch']['name']; 
-                $user['image'] = $userLoggedIn['branch']['image']; 
+                $user['is_main'] = $userLoggedIn['branch']['is_main'];
+                $user['branch_name'] = $userLoggedIn['branch']['name'];
+                $user['image'] = $userLoggedIn['branch']['image'];
 
                 $this->Auth->setUser($user);
                 $audit = $auditTable->newEntity();
@@ -45,6 +51,73 @@ class UsersController extends AppController
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again.'));
+        }
+    }
+
+    public function forgot()
+    {
+        $this->viewBuilder()->setLayout('');
+        if ($this->request->is('post')) {
+          $userMatch = $this->Users->find('all', [
+            'conditions' => [
+              'email' => $this->request->data['email']
+            ]
+          ])->first();
+          // pr($userMatch);
+          if (!isset($userMatch)) {
+
+              $this->Flash->error('No record found! Please provide registered email.');
+              return;
+          }
+
+          require_once(__DIR__.'/../../webroot/PHPmailer/class.phpmailer.php');
+          $mail = new \PHPMailer();
+
+          $mail->IsSMTP();
+          $mail->SMTPAuth = true;
+          $mail->SMTPSecure = "tls";
+          $mail->Host = "smtp.gmail.com";
+          $mail->Port = 587;
+          $mail->Username = 'rmmmeatshop@gmail.com';
+          $mail->Password = "rmmmeatshop2018";
+          $mail->isHTML(true);
+          $mail->From = "noreply@rmmmeatshop.com";
+          $mail->FromName = "RMM Meatshop";
+          $mail->Subject = "Change Password Request";
+          $mail->AddAddress($this->request->data['email']);
+
+          $mail->Body = "Hi $userMatch->first_name $userMatch->last_name,<br><br>You are receiving this email because we received a password reset request for your account.<br><br> You can reset your password by clicking the button below.<br> <a href='http://localhost/rmm/users/newpass/". str_replace('/','^',$userMatch->password) ."'><button>Reset Password</button></a><br>If you did not request a password reset, no further action is required<br><br>Thank you!<br><br>Regards,";
+          if($mail->send()) {
+            $this->Flash->success('Verification email was sent to you!');
+          }
+
+        }
+    }
+
+    public function newpass($pass)
+    {
+        $this->viewBuilder()->setLayout('');
+        $userMatch = $this->Users->find('all', [
+          'conditions' => [
+            'password' => str_replace('^','/',$pass)
+          ]
+        ])->first();
+        if (!isset($userMatch)) {
+
+            $this->Flash->error('Please enter your email');
+            $this->redirect(['action' => 'forgot']);
+            return;
+        }
+        if ($this->request->is(['patch', 'post', 'put'])) {
+          if ($this->request->data['password'] != $this->request->data['password2']) {
+            $this->Flash->error('Password did not matched.');
+            return;
+          }
+          $user = $this->Users->patchEntity($userMatch, $this->request->getData());
+          if ($this->Users->save($user)) {
+            $this->Flash->success('Password successfully updated!');
+            $this->redirect(['action' => 'login']);
+          }
         }
     }
 
@@ -117,7 +190,7 @@ class UsersController extends AppController
     public function add()
     {
         $auth = $this->request->session()->read('Auth.User');
-        
+
         $this->loadModel('Branches');
         $condition = [];
         if (!$auth['is_main']) {
@@ -138,7 +211,7 @@ class UsersController extends AppController
                 $user = $this->Users->patchEntity($user, $this->request->getData());
                 if ($this->Users->save($user)) {
                     $this->Flash->success(__('The user has been saved.'));
-                    
+
                     $auditTable = TableRegistry::get('Audit');
                     $audit = $auditTable->newEntity();
                     $audit->user_id = $auth['id'];

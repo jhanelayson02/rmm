@@ -6,6 +6,10 @@ ADD COLUMN `inprogress` DATETIME NULL AFTER `created`,
 ADD COLUMN `delivered` DATETIME NULL AFTER `inprogress`,
 ADD COLUMN `received` DATETIME NULL AFTER `delivered`;
 
+ALTER TABLE `rmm`.`users`
+ADD COLUMN `email` VARCHAR(255) NULL AFTER `username`;
+
+
 7j5UeGWaCSsYcRX
 
 dbase

@@ -26,21 +26,16 @@ body {
                 <?= $this->Flash->render() ?>
               	<?= $this->Form->create()	?>
 
-                <?= $this->Form->input('username', ['class' => 'form-control', 'required' => true])	?>
+                <?= $this->Form->input('password', ['class' => 'form-control', 'required' => true])	?>
+                <?= $this->Form->input('password2', ['class' => 'form-control', 'required' => true, 'label' => 'Confirm Password', 'type' => 'password'])	?>
 
               </div>
-              <div>
 
-                <?=	$this->Form->input('password',['class' => 'form-control', 'required' => true, 'type' => 'password'])	?>
-
-              </div>
               <div><br>
 
-                <?=	$this->Form->button('Log in',['class' => 'form-control btn btn-success', 'required' => true])	?>
+                <?=	$this->Form->button('Verify',['class' => 'form-control btn btn-success', 'required' => true])	?>
 
                 <?=	$this->Form->end()	?>
-
-                <?= $this->Html->link('Forgot Password', ['action' => 'forgot'], ['style' => 'color:white;font-size:20px;']); ?>
 
               </div>
 
